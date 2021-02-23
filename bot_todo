@@ -1,0 +1,440 @@
+bot_todo
+
+To get started enter a title for your note above. When you’re ready to save
+your note just use Vim’s :write or :update commands, a filename will be picked
+automatically based on the title.
+
+                                    * * *
+
+The notes plug-in comes with self hosting documentation. To jump to these notes
+position your cursor on the highlighted name and press ‘gf’ in normal mode:
+
+ • Note taking syntax
+ • Note taking commands
+
+ ✅  DONE
+ 🏃 :IN_PROGRESS
+ ████▁▁▁▁ 50% :IN_PROGRESS
+
+                                     * * *
+
+# DEVELOPPEMENT:
+   SPRINT-2: 
+   1: DEBUT-FIN se calcule avec la suite de fibonacci:  0, 1, 2, 3, 5, 8, 13, 21, 34, ...
+
+   | NUM | DATE DEBUT —— DATE FIN                                                                                     |   NBRE DAYS | STATE | STORY BUG                         |
+   |-----+------------------------------------------------------------------------------------------------------------+------------:+------:+-----------------------------------|
+   | 2   | lun. 15 févr. 2021 17:30:00 —— mar. 23 févr. 2021 10:18:47                                                 |         2/3 |    1% |                                   |
+   |-----+------------------------------------------------------------------------------------------------------------+-------------+-------+-----------------------------------|
+   |     | -----+------------------------------------------------------------------------------+-------------+------- |             |       |                                   |
+   | ID  | STORIES                                                                                                    | NBRE HEURES | STATE |                                   |
+   |----:+------------------------------------------------------------------------------------------------------------+------------:+-------+-----------------------------------|
+   | -4  | Generer les data NLU à partir des chapitres du Pouvoir Illimité du SPRINT-1                                |          1h |  100% |                                   |
+   |-----+------------------------------------------------------------------------------------------------------------+-------------+-------+-----------------------------------|
+   | -3  | Mise à jour le domaine file du NLU avec pour reconnaitre les nouveau intents                               |         30m |  100% |                                   |
+   |     | actions, responses, ... ajoutés.                                                                           |             |       |                                   |
+   |----:+------------------------------------------------------------------------------------------------------------+------------:+-------+-----------------------------------|
+   | -2  | Definir les slots dans les utterrances generate pour les chapitres du Pou-                                 |          1h |  100% |                                   |
+   |     | voir Illimité du SPRINT-1:                                                                                 |             |       |                                   |
+   | -2  | Definir les slots dans les utterrances generate pour les chapitres du Pou-                                 |          1h |  100% |                                   |
+   |     | voir Illimité du SPRINT-1:                                                                                 |             |       |                                   |
+   | -2  | Definir les slots dans les utterrances generate pour les chapitres du Pou-                                 |          1h |  100% |                                   |
+   |     | voir Illimité du SPRINT-1:                                                                                 |             |       |                                   |
+   |-----+------------------------------------------------------------------------------------------------------------+-------------+-------+-----------------------------------|
+   | 5.0 | En tant que jeûne entrepreneur, je demande à Jady:                                                         |             |       |                                   |
+   |     | QUESTION: quelles sont les croyances des leaders d’entreprises, des                                        |          3h |  100% |                                   |
+   |     | meneurs ou batisseurs.                                                                                     |             |       |                                   |
+   |     | COMPORTEMENT ATTENDU: Je veux que Jady sache l’intent de la question.                                      |             |       |                                   |
+   |-----+------------------------------------------------------------------------------------------------------------+-------------+-------+-----------------------------------|
+   | 5.1 | En tant que jeûne entrepreneur, je demande à Jady:                                                         |             |       | La conversion du livre en format  |
+   |     | QUESTION: quelles sont les croyances des leaders d’entreprises, des                                        |          4j | 90%🏃 | EPUB au format JSON ne fonction-  |
+   |     | meneurs ou batisseurs.                                                                                     |             |       | nent pas sur tout les livres.     |
+   |     | COMPORTEMENT ATTENDU: Je veux que Jady sache et reponde à la question en:                                  |             |       | Il y’a le content d’un chapitre   |
+   |     | 1: Retourne le chapitre qui parle de la QUESTION                                                           |             |       | qui se repette dans plusieurs au- |
+   |     | 2: Retourne →  (1) le nom du livre, (2) l’auteurs, (3) date, (4) categorie.                                |             |       | tres chapitre.                    |
+   |----:+------------------------------------------------------------------------------------------------------------+------------:+-------+-----------------------------------|
+   | 0   | ... Jady: APPRENDRE L'EXCÉLLENCE HUMAINE OU LE POUVOIR DE                                                  |         30m |  100% |                                   |
+   |     | L’ACTION.                                                                                                  |             |       |                                   |
+   |-----+------------------------------------------------------------------------------------------------------------+-------------+-------+-----------------------------------|
+   | 6   | En ... je ... Jady: COMMENT MAÎTRISER SON ESPRIT OU CER-                                                   |             |       |                                   |
+   |     | VEAU, pour lire les chapitre qui parlent de comment mieux                                                  |         30m |  100% |                                   |
+   |     | utiliser son cerveau.                                                                                      |             |       |                                   |
+   |-----+------------------------------------------------------------------------------------------------------------+-------------+-------+-----------------------------------|
+   | 9   | ... Jady: COMMENT LA PHYSIOLOGIE OU NOTRE CORPS INFLUT                                                     |         30m |  100% |                                   |
+   |     | TELLE SUR NOTRE ATTITUDE, pour ... de “ “.                                                                 |             |       |                                   |
+   |-----+------------------------------------------------------------------------------------------------------------+-------------+-------+-----------------------------------|
+   | 10  | ... Jady: COMMENT RÉALISER DES PERFORMANCES MAXIMALES OU                                                   |             |       |                                   |
+   |     | COMMENT ÊTRE EN PLIENE FORME, pour ... de l’energie et                                                     |         30m |  100% |                                   |
+   |     | de la productivité.                                                                                        |             |       |                                   |
+   |-----+------------------------------------------------------------------------------------------------------------+-------------+-------+-----------------------------------|
+   | 11  | ... Jady: LA FORMULE FONDAMENTALE DU SUCCÈS OU COMMENT DE-                                                 |         30m |  100% |                                   |
+   |     | FINIR CE QUE JE VEUX DANS LA VIE ET L’OBTENIR.                                                             |             |       |                                   |
+   |-----+------------------------------------------------------------------------------------------------------------+-------------+-------+-----------------------------------|
+   | 13  | ... Jady: LE POUVOIR DE LA PRÉCISION                                                                       |         30m |  100% |                                   |
+   |-----+------------------------------------------------------------------------------------------------------------+-------------+-------+-----------------------------------|
+   | 14  | ... Jady: Établir des distinctions : les méta-programmes                                                   |         30m |  100% |                                   |
+   |-----+------------------------------------------------------------------------------------------------------------+-------------+-------+-----------------------------------|
+   | 15  | ... Jady: Comment venir à bout des résistances et résoudre les problèmes                                   |         30m |  100% |                                   |
+   |-----+------------------------------------------------------------------------------------------------------------+-------------+-------+-----------------------------------|
+   | 16  | ... Jady: Restructuration des schémas : le pouvoir de la perspective                                       |         30m |  100% |                                   |
+   |-----+------------------------------------------------------------------------------------------------------------+-------------+-------+-----------------------------------|
+   | 16  | Mettre a jour le model NLU avec l’utterances de intent offend                                              |         30m |    0% |                                   |
+   |-----+------------------------------------------------------------------------------------------------------------+-------------+-------+-----------------------------------|
+
+#RELEASE-1: Realiser un MVP 1.0
+   1: Un release prend au plus 25jours
+   2: “ “ est un enble de qlq fonctionnalite qui suffit pour un MVP
+   3: The Days se calcule avec la suite de fibonacci:  0, 1, 2, 3, 5, 8, 13, 21, 34, ...
+
+   | RELEASE                                                                                    | SPRINT |  1x Days | DATE DEBUT                  | DATE FIN                    | STATE |
+   |--------------------------------------------------------------------------------------------+-------:+---------:+-----------------------------+-----------------------------+------:|
+   | Generer le data NLU en json format à patir du contenu du {Pouvoir Illimite de Robbins}     |      1 |        6 | mar. 09 févr. 2021 09:20:34 | lun. 15 févr. 2021 12:00:00 |  100% |
+   |--------------------------------------------------------------------------------------------+--------+----------+-----------------------------+-----------------------------+-------|
+   | Entrainer le bot sur le data NLU, du {Pouvoir Illimite de Robbins}                         |   →  2 |        8 | lun. 15 févr. 2021 17:30:00 | mar. 23 févr. 2021 10:20:00 |   90% |
+   |--------------------------------------------------------------------------------------------+--------+----------+-----------------------------+-----------------------------+-------|
+   | Ordonner cet backlog du plus important ou urgent au plus farfelu                           |      3 | 30Munite | mar. 16 févr. 2021 12:00:00 | mar. 16 févr. 2021 12:30:00 |    0% |
+   |--------------------------------------------------------------------------------------------+--------+----------+-----------------------------+-----------------------------+-------|
+   | Refléchir aux l’objectifs réels à atteindre avec les valeurs ajoutés.                      |      3 | 30Munite | mar. 16 févr. 2021 12:00:00 | mar. 16 févr. 2021 12:30:00 |    0% |
+   |--------------------------------------------------------------------------------------------+--------+----------+-----------------------------+-----------------------------+-------|
+   | Developper une Interface Graphique de communication avec jady                              |      4 |        3 | mar. 16 févr. 2021 12:30:00 | ven. 19 févr. 2021 12:30:00 |    0% |
+   |--------------------------------------------------------------------------------------------+--------+----------+-----------------------------+-----------------------------+-------|
+   | 1→ Generer les data pour les autres intents telque: greet, offend, need_help, ask_bot_pos- |      5 |        1 |                             |                             |       |
+   | sibility etc...                                                                            |        |          |                             |                             |       |
+   | 2→ definir les entités possibles et les slots                                              |        |          |                             |                             |       |
+   |--------------------------------------------------------------------------------------------+--------+----------+-----------------------------+-----------------------------+-------|
+   | 1 → Ajouter un formulaire d’enregistement des user dans l’interface                        |      6 |        1 |                             |                             |       |
+   | 2 → Engistrer dans la base de données les informations saisie par l’utilisateur a apartir  |        |          |                             |                             |       |
+   | des slots.                                                                                 |        |          |                             |                             |       |
+   |--------------------------------------------------------------------------------------------+--------+----------+-----------------------------+-----------------------------+-------|
+
+# BACKLOG
+   | BACKLOG                                                                                     |
+   |---------------------------------------------------------------------------------------------|
+   |---------------------------------------------------------------------------------------------|
+   | Ecrire sur son cahier de projet Les principes de cet projets et Mes principes d’entrepre-   |
+   | neur.                                                                                       |
+   |---------------------------------------------------------------------------------------------|
+   | 1→ Definir le Preface des livres comme le field ‘context’ dans le BookSchema si la descrip- |
+   | tion est vide. car context = descriptions                                                   |
+   | 2→ OU Developper un proramme qui utilise le ISBN du livre pour trouvez la description sur   |
+   | Amazon/Zlib.org ou autres sites.                                                            |
+   |---------------------------------------------------------------------------------------------|
+   | Permettre a Jady d’afficher “l’image de couverture” du livre avec la reponse.               |
+   |---------------------------------------------------------------------------------------------|
+   | Permettre Jady de retourner les mots qu’il ne connais pas: sexe...                          |
+   |---------------------------------------------------------------------------------------------|
+   | Permettre a Jady de reconnaitre les insultes et de repondre.                                |
+   |---------------------------------------------------------------------------------------------|
+   | Permettre a Jady de faire des blagues.                                                      |
+   |---------------------------------------------------------------------------------------------|
+   | Creer un module pour mettre ajour automatiquement le domaine file  yaml/yml                 |
+   |---------------------------------------------------------------------------------------------|
+   | Mise à jour le domaine file du NLU avec pour inclures les slots, entités etc...             |
+   |---------------------------------------------------------------------------------------------|
+   | ### RELEASE-1 —> SPRINT-1 ###                                                               |
+   | — Generer le data NLU en json format à patir du contenu du {Pouvoir Illimite de Robbins}    |
+   | ——— ### UNE STORY-7 ####                                                                    |
+   | ... Jady: COMMENT DÉCOUVRIR LA STRATÉGIE D’UN INDIVIDU,                                     |
+   | pour ... de “ “.                                                                            |
+   |---------------------------------------------------------------------------------------------|
+   | ### RELEASE-1 —> SPRINT-1 ###                                                               |
+   | — Generer le data NLU en json format à patir du contenu du {Pouvoir Illimite de Robbins}    |
+   | ——— ### UNE STORY-8 ####                                                                    |
+   | ... Jady: COMMENT IMITER CEUX QUI REUSSISSENT, pour ...                                     |
+   | de la maniere dont certain font pour avoir des super re-                                    |
+   | sultats.                                                                                    |
+   |---------------------------------------------------------------------------------------------|
+   | ### RELEASE-1 —> SPRINT-1 ###                                                               |
+   | — Generer le data NLU en json format à patir du contenu du {Pouvoir Illimite de Robbins}    |
+   | ——— ### UNE STORY-21 ####                                                                   |
+   | ... Jady: Vivre_l_’_excellence_:_le_défi_humain                                             |
+   |---------------------------------------------------------------------------------------------|
+   | Retourner avec la reponse si le chapitre-ci est lier a un précédent ou au suivant.          |
+   |---------------------------------------------------------------------------------------------|
+   | Entrainer & Tester le models (NLU + CORE) sur les utterances crées.                         |
+   |---------------------------------------------------------------------------------------------|
+   | Entrainer le bot sur le contenu de 5 livres de plus                                         |
+   |---------------------------------------------------------------------------------------------|
+   | Implementer les ENTITÉS au utterances creer                                                 |
+   |---------------------------------------------------------------------------------------------|
+   | Utiliser le NLU pour DETERMINER LE CONTEXT de la recherche(question poser) pour ameliorer   |
+   | les reponses &t faire la recherche apartir de ce context.                                   |
+   |---------------------------------------------------------------------------------------------|
+   | Donner un CONTEXT et KEYWORD lors de l’indexation afin d’ameliorer la recherche             |
+   |---------------------------------------------------------------------------------------------|
+   | Launch !!! Partager jady au plus grands nobre: Facebook, Youtube, tweeter, Meduin etc       |
+   |---------------------------------------------------------------------------------------------|
+   | Developper un MOYEN ou un OUTIL afin de partager, de faire le marketing et la publicité     |
+   | de façon automatique                                                                        |
+   |---------------------------------------------------------------------------------------------|
+   | Take (3→) asynchrone for the case we add lot of file into ‘epubFrench dir’ in same time     |
+   |---------------------------------------------------------------------------------------------|
+   | Permetter aux Users d’attribuer des notes à des reponses au questions                       |
+   |---------------------------------------------------------------------------------------------|
+   | Permetter aux Users de choisir entre les themes: Vente, Marketing, Finance ou l’Argent,     |
+   | Create de valeur                                                                            |
+   |---------------------------------------------------------------------------------------------|
+   | Donner des rang au qestions, c-a-d a chque chapter. Et modifier ces le rang selon la no-    |
+   | te donner par l’utilisateur, et selon son nbre de vu.                                       |
+   |---------------------------------------------------------------------------------------------|
+   | Retourner en plus de la reponse, la page de couverture du livre des livres conserner.       |
+   |---------------------------------------------------------------------------------------------|
+   | Retourner en plus de la reponse, le nom de l’auteur apres et Afficher le nom de l’auteur    |
+   | juste après le titre du chapitre.                                                           |
+   |---------------------------------------------------------------------------------------------|
+   |                                                                                             |
+   |---------------------------------------------------------------------------------------------|
+
+
+
+                                     * * *
+
+# DONE
+   | DONE                                                                                       | DATE DEBUT | DATE FIN   |
+   |--------------------------------------------------------------------------------------------+------------+------------|
+   | change name ‘jady1.0’ to ‘jady’ in others files, find others file with grep                | ...        | Before Fev |
+   |--------------------------------------------------------------------------------------------+------------+------------|
+   | Make the ‘epubBook → Json, Indexing & Search’ in main.py                                   | ...        | Before Fev |
+   |--------------------------------------------------------------------------------------------+------------+------------|
+   | Make (2→) dynamicaly convert ‘epubBook → JsonBook’ all files in ‘epubFrend dir’ then index | ...        | Before Fev |
+   | all JsonBook in ‘jsonFrench dir’                                                           |            |            |
+   |--------------------------------------------------------------------------------------------+------------+------------|
+   | Update main/__init__.py by import Class in update.py                                       | ...        | Before Fev |
+   |--------------------------------------------------------------------------------------------+------------+------------|
+   | Test main/update.py/:UpdateIndex Class for indexing all book in books/JsonFrench dir       | ...        | Before Fev |
+   |--------------------------------------------------------------------------------------------+------------+------------|
+   | add a function rest_jsonBook to main/update.py for reset jsonFrench dir                    | ...        | Before Fev |
+   |--------------------------------------------------------------------------------------------+------------+------------|
+   | Implement search it to ‘jady’                                                              | ...        | Before Fev |
+   |--------------------------------------------------------------------------------------------+------------+------------|
+   |                                                                                            | ...        | Before Fev |
+   |--------------------------------------------------------------------------------------------+------------+------------|
+   | developer un moyen de lier LE TITRE DE CHAQ CHAPITRE A SON CONTENU                         | ...        | Before Fev |
+   | USE: {{{ from jady1.0.processing_book.processEpub import processEpub }}}                   |            |            |
+   |--------------------------------------------------------------------------------------------+------------+------------|
+   | Se servir du moyen ci-dessus pour re-ecrire le livre en json sous forme:                   |            |            |
+   | {title: ‘title’, content: ‘content’}                                                       | ...        | Before Fev |
+   | {{{ from jady1.0.actions.search.search import IndexBook }}}                                |            |            |
+   |--------------------------------------------------------------------------------------------+------------+------------|
+   | developer un moyen d’indexer chq chapiter d’un livre                                       | ...        | Before Fev |
+   |--------------------------------------------------------------------------------------------+------------+------------|
+   | Tester la class IndexBook developer                                                        |            |            |
+   |--------------------------------------------------------------------------------------------+------------+------------|
+
+
+# NOTES:
+   note1: Tu n’en pas besion de tout savoir, Steve Jobs, Bill Gate et tout c’est
+   n’etaient pas des savant, mais des personnes d’action,, j’espère que ton ob-
+   jectif et de faire mais pas seulement apprendre faire.
+   Tu n’en pas besion de tout savoir, tu juste besoin de savoir ce qu’il faut
+   avec les gigabits d’information qui existe vous et moi, savions plus ou maî-
+   tre la tête.
+   Mon but est s’incerement de vous orientez vers l’essentiels le concrèt, qui
+   fait vous fait réaliser des prodige là maintenant. vous apprendre ce que 
+   Steve a apris auprès de son mentor ...(Biographie de Steve Jobs)...== Un liv-
+   vre est jugé par sa couverture et un produit, ce qui vos les superbe produit,
+   d’apple. 
+
+
+#WARNING:
+   Warning: _RESOLVED
+   La variable ‘BASE_DIR’ de settings/config_default n’est pas tout static et
+   depend du chemin local
+
+   Warning:
+   from chatbotapp.others_pkg ‘la completion’ ne fonctionne pas
+   Mais le l’importation fonctionne apres avoir ajouter le fichier
+   setup.py a la racine
+
+
+                                     * * *
+
+
+# REFERENCES
+
+# SPRINT-0:
+   VISION:
+      Voici à quoi consiste ce projet:
+         1> Créer Jady un Model Artificiel Intelligente et Évolutif, qui accompagne les
+            démarreur dans leurs aventures unique de création et développement d’entre-
+            prise et leurs développement personnelles.
+            
+            
+
+      Les pourquoi nous faisons ce projet:
+         Je me suis rendu compte moi alassane que lors de mes lectures, je cher-
+         che la reponse a certaine question, j’aime lire je sais ça, mais je
+         qu’il n’est pas necessaire de lire tout le livre pour savoir ce que je
+         doit savoir, juste ce qu’il me faut pour avancer d’un pas, et que dans
+         le parcours entrepreneurial, on cherche bcp a profiter de l’experience
+         des anciens, dans cette aventure, il y’a enormement de chemin a prendre
+         vivre cette aventure pour arriver a tes fins, j’ai compris ça.
+         1: J’ai compris que j’ai pas besoin de tout savoir, mais juste ce qu’il
+            faut.
+         2: &t j’ai conscience qu’il y’a des choses que j’ignore et qu’il faut
+            faut que je sache.
+         3: A la fin je me rend compte que je cherche des conseils, des manieres
+            de faire et d’evoluer dans tout ce que je fais dans les livres.
+         4: Or moi, je ne sais pas vraiment qu’elle livre, il me faut, quelle
+            informations il me faut, quelles question il me faut poser.
+         5: De mon experience actuel, le conseil que je dirais a mon moi de 20ans,
+            serait:
+            > L’art d’être franch et direct avec ces pensées:
+            > L’art d’être honnête.
+            > L’art de planifier Une fois, et d’agir 1000fois Ou l’art de passer a l’action
+            > L’art de la conviction absolue, que c’est lui qui crée ça realisté
+            > C’est lui qui crée le possible et l’impossible.
+         Pour nous les Concepteurs:
+            1> En plus de tout ce qui est enumerer dessus.
+            2> Gagner de l’argent
+            3> Contribuer a l’evolution et au succes des personnes
+      En quoi ce projet est-il important:
+         1: Un gain de temps phenomenale, car il nous evite d’emprinter des che-
+            min détournés.
+         2: Une education unique personnaliser.
+         3: Une croissance sans limite dans les domaines de la vie
+         4: Atteindre ces objectifs les plus fous aussi vite qu’on ne peut l’imaginer
+         5: Un compangnos de route unique a son genre.
+
+   UTILISATEUR:
+      Je suis alassane, je suis dans la vingtaine, j’ambitionne de:
+      1 creer un entriprise non, plusieurs même au cours de ma vie,
+      2 faires des choses qui soient utiles et très bénéfique aux gens,
+      3 des choses qui me suivivra même après ma mort
+      Je suis a la recherche des outils, des moyens unique, rapide, et direct 
+      d’atteindre mes objectif. je crois que l’information peut faire la dif-
+      ference dans mon parcour, mais ils y’ a telma que je suis perdu et frustrer.
+      Je lis beaucoup, au minimum 1heur/jour chaque jours, pour comprendre la vie
+      et apprendre de nouevelle choses et maniere de faire pour realiser mes
+      objectifs plus rapidement et pouvoir faire bcp de choses, faire bcp d’argent
+
+      :MON_GROS_PROBLEME est la masse d’informations de livre, de video et audio
+      qui existe sur comment faire ce qu’il faut qu’on y perde la tête, il y’a
+      qui sont super, d’autre evident, mais d’autre complement loufoque. 
+      Avec tout ça on est confus, perdu, et faite du surplace. 
+
+      :JE_VEUX
+      Je voudrais avoir un coach, qui sais ou je suis et ce que je cherche a atteindre
+      cherche et trier et me propose des avis trancher sur ce qu’il me faut faire et
+      apprendre pour atteindre mon but.
+
+   OBJECTIFS:
+      Notre objectif est de concevoir une intelligence capable de converser avec
+      les gens, nous ciblons les demarreur d’entreprise et ceux qui font du de-
+      veloppement personnel.
+
+      Une fois notre objectif la conversation avec cette model intelligence res-
+      semblera a ceci:
+      MODE LECTURE:
+         Qsn: c’est quoi l’essentiel de la vente pour un entrepreneur ?
+            note: A supposer que le vous êtes un entrepreneur, developpeur et
+                  que le bot sache ceci.
+         Rep:  Voici les livres les plus partager entre les entrepreneurs
+               1: psychologie de la vente de Bryan tracy. (Recommander)
+               2: Sell Or Be sell de Grant Gardone
+               3: ...
+               vous choississez: [Bryan Tracy]  [Grant Gardone]  [BUtton 3]
+
+
+// ##################  ARCHIVES SPRINTS: L’archive des sprints réalisés ###################
+   
+#ARCHIVE SPRINT-1: 
+   1: DEBUT-FIN se calcule avec la suite de fibonacci:  0, 1, 2, 3, 5, 8, 13, 21, 34, ...
+
+   | NUM | DATE DEBUT —— DATE FIN                                                   |   NBRE DAYS | STATE        |
+   |-----+--------------------------------------------------------------------------+------------:+--------------|
+   | 1   | mar. 09 févr. 2021 09:20:34 —— lun. 15 févr. 2021 12:00:00               |           6 | ███████ 100% |
+   |-----+--------------------------------------------------------------------------+-------------+--------------|
+   |-----+--------------------------------------------------------------------------+-------------+--------------|
+   | ID  | STORIES                                                                  | NBRE HEURES | STATE        |
+   |----:+--------------------------------------------------------------------------+------------:+--------------|
+   | 0   | ... Jady: APPRENDRE L'EXCÉLLENCE HUMAINE OU LE POUVOIR DE                |             |              |
+   |     | L’ACTION.                                                                |             |              |
+   |-----+--------------------------------------------------------------------------+-------------+--------------|
+   | 5   | En tant que jeûne entrepreneur, je veux demander à Jady:                 |             |              |
+   |     | QUELLES SONT LES CROYANCES DES LEADERS D’ENTREPRISES, DES                |           2 | ███████ 100% |
+   |     | MENEURS OU BATISSEUR, pour lire les chapitres qui parlent                |             |              |
+   |     | des croyances des Leaders.                                               |             |              |
+   |-----+--------------------------------------------------------------------------+-------------+--------------|
+   | 6   | En ... je ... Jady: COMMENT MAÎTRISER SON ESPRIT OU CER-                 |             |              |
+   |     | VEAU, pour lire les chapitre qui parlent de comment mieux                |           2 | ███████ 100% |
+   |     | utiliser son cerveau.                                                    |             |              |
+   |-----+--------------------------------------------------------------------------+-------------+--------------|
+   | 9   | ... Jady: COMMENT LA PHYSIOLOGIE OU NOTRE CORPS INFLUT                   |           2 | ███████ 100% |
+   |     | TELLE SUR NOTRE ATTITUDE, pour ... de “ “.                               |             |              |
+   |-----+--------------------------------------------------------------------------+-------------+--------------|
+   | 10  | ... Jady: COMMENT RÉALISER DES PERFORMANCES MAXIMALES OU                 |             |              |
+   |     | COMMENT ÊTRE EN PLIENE FORME, pour ... de l’energie et                   |           2 | ███████ 100% |
+   |     | de la productivité.                                                      |             |              |
+   |-----+--------------------------------------------------------------------------+-------------+--------------|
+   | 11  | ... Jady: LA FORMULE FONDAMENTALE DU SUCCÈS OU COMMENT DE-               |           2 | ███████ 100% |
+   |     | FINIR CE QUE JE VEUX DANS LA VIE ET L’OBTENIR.                           |             |              |
+   |-----+--------------------------------------------------------------------------+-------------+--------------|
+   | 12  | ... Jady: LE POUVOIR DE LA PRÉCISION                                     |           2 | ███████ 100% |
+   |-----+--------------------------------------------------------------------------+-------------+--------------|
+   | 13  | ... Jady: LA MAGIE DE LA SYMPATHIE                                       |           2 | ███████ 100% |
+   |-----+--------------------------------------------------------------------------+-------------+--------------|
+   | 14  | ... Jady: Établir des distinctions : les méta-programmes                 |           2 | ███████ 100% |
+   |-----+--------------------------------------------------------------------------+-------------+--------------|
+   | 15  | ... Jady: Comment venir à bout des résistances et résoudre les problèmes |           2 | ███████ 100% |
+   |-----+--------------------------------------------------------------------------+-------------+--------------|
+   | 16  | ... Jady: Restructuration des schémas : le pouvoir de la perspective     |           2 | ███████ 100% |
+   |-----+--------------------------------------------------------------------------+-------------+--------------|
+   | 17  | ... Jady: Les points d’ancrage de la réussite                            |           2 | ███████ 100% |
+   |-----+--------------------------------------------------------------------------+-------------+--------------|
+   | 18  | ... Jady: Les_systèmes_de_valeurs_:_jugement_ultime_de_la_réussite       |           2 | ███████ 100% |
+   |-----+--------------------------------------------------------------------------+-------------+--------------|
+   | 19  | ... Jady: Les_cinq_clés_de_la_richesse_et_du_bonheur                     |           2 | ███████ 100% |
+   |-----+--------------------------------------------------------------------------+-------------+--------------|
+   | 20  | ... Jady: Création_des_tendances_:_le_pouvoir_de_la_persuasion           |           2 | ███████ 100% |
+   |-----+--------------------------------------------------------------------------+-------------+--------------|
+
+   DEVELOPPEMENT:
+   | TASKS STORY                               | STATE | STORIES BUG |
+   |-------------------------------------------+-------+-------------|
+   | Implementer et Generer les utterances de: | ✅    |             |
+   | LES SEPT MENSONGES DU SUCCÈS en json      |       |             |
+   |-------------------------------------------+-------+-------------|
+   | Implementer et Generer les utterances de  | ✅    |             |
+   | la story 6 au format json                 |       |             |
+   |-------------------------------------------+-------+-------------|
+   | Implementer et Generer les utterances de  | ✅    |             |
+   | la story 9 au format json                 |       |             |
+   |-------------------------------------------+-------+-------------|
+   | Implementer et Generer les utterances de  | ✅    |             |
+   | la story 10 au format json                |       |             |
+   |-------------------------------------------+-------+-------------|
+   | Implementer et Generer les utterances de  | ✅    |             |
+   | la story 12 au format json                |       |             |
+   |-------------------------------------------+-------+-------------|
+   | Implementer et Generer les utterances de  | ✅    |             |
+   | la story 11 au format json                |       |             |
+   |-------------------------------------------+-------+-------------|
+   | Implementer et Generer les utterances de  | ✅    |             |
+   | la story 01 au format json                |       |             |
+   |-------------------------------------------+-------+-------------|
+   | Implementer et Generer les utterances de  | ✅    |             |
+   | la story 13 au format json                |       |             |
+   |-------------------------------------------+-------+-------------|
+   | Implementer et Generer les utterances de  | ✅    |             |
+   | la story 14 au format json                |       |             |
+   |-------------------------------------------+-------+-------------|
+   | Implementer et Generer les utterances de  | ✅    |             |
+   | la story 15 au format json                |       |             |
+   |-------------------------------------------+-------+-------------|
+   | Implementer et Generer les utterances de  | ✅    |             |
+   | la story 16 au format json                |       |             |
+   |-------------------------------------------+-------+-------------|
+   | Implementer et Generer les utterances de  | ✅    |             |
+   | la story 17 au format json                |       |             |
+   |-------------------------------------------+-------+-------------|
+   | Implementer et Generer les utterances de  | ✅    |             |
+   | la story 18 au format json                |       |             |
+   |-------------------------------------------+-------+-------------|
+   | Implementer et Generer les utterances de  | ✅    |             |
+   | la story 19 au format json                |       |             |
+   |-------------------------------------------+-------+-------------|
+   | Implementer et Generer les utterances de  | ✅    |             |
+   | la story 20 au format json                |       |             |
+   |-------------------------------------------+-------+-------------|
+
