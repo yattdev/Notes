@@ -55,9 +55,31 @@ position your cursor on the highlighted name and press ‘gf’ in normal mode:
    1> Developper un MVP
       Un produit fonctionnel facilement partageable qui fait le travail tres basique
       de retourner une reponses apartir de livre a une question.
+      → Pour atteindre cette objectif il me faut me concentrer exclusivement sur cet-
+      te tache sortir une Version1 avec intrefacte de jady.
    Qu’est ce fais jady a une phrase: ?
 
    2> Partager le MVP sur tout les canaux: Youtube, Facebook, Tweeter, sur tout...
    3> Deployer un MVP:
       • Creer un site web
       • Creer une communaute autour du produit
+
+   Qu’est ce qui est plus important developper une site web pour informer les gens
+   et laisser reprendre la nouvelle pour et ceci me donne une idee du potentiel 
+   autour de mon idee meme convaincre les gens de me joindre et me supporter.
+
+   Developper un site web sur django ou un site gitweb:
+  | Django                             | Github                            |
+  |------------------------------------+-----------------------------------|
+  | Plus de possibilité, car c’est une | Mise en place tres rapide du site |
+  | application.                       |                                   |
+  |------------------------------------+-----------------------------------|
+  |                                    | Le moins cher, juste j’achate le  |
+  |                                    | nom de domaine.                   |
+  |------------------------------------+-----------------------------------|
+
+  Conclusion:
+  1→ Je developpe le site très rapidement sur github
+  2→ Je witch sur django quand le flux du site sera plus forte et demande plus de
+  fonctionnalite en integrant juste les template avec l’application django. 
+   

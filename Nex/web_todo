@@ -1,0 +1,222 @@
+botweb_todo
+
+To get started enter a title for your note above. When you’re ready to save
+your note just use Vim’s :write or :update commands, a filename will be picked
+automatically based on the title.
+
+                                    * * *
+
+The notes plug-in comes with self hosting documentation. To jump to these notes
+position your cursor on the highlighted name and press ‘gf’ in normal mode:
+
+ • Note taking syntax
+ • Note taking commands
+
+                                     * * *
+
+#DEVELOPPEMENT:
+   SPRINT-1: 
+   1: DEBUT-FIN se calcule avec la suite de fibonacci:  0, 1, 2, 3, 5, 8, 13, 21, 34, ...
+
+   | NUM | DATE DEBUT —— DATE FIN                                                          |   NBRE DAYS | STATE |
+   |-----+---------------------------------------------------------------------------------+------------:+------:|
+   | 2   | lun. 15 févr. 2021 17:30:00 —— mer. 17 févr. 2021 16:55:00                      |           1 |   20% |
+   |-----+---------------------------------------------------------------------------------+-------------+-------|
+   |-----+---------------------------------------------------------------------------------+-------------+-------|
+   | ID  | STORIES                                                                         | NBRE HEURES | STATE |
+   |----:+---------------------------------------------------------------------------------+------------:+-------|
+   | 1   | En tant que admin je veux rendre accessible la présentation de la home-page     |         30m |  100% |
+   |     | au plus vite, sans attendre que le blog soit ok. et pouvoir aus-                |             |       |
+   |     | si déléguer/partager le travail de l’un des 2, a une autre personne.            |             |       |
+   |-----+---------------------------------------------------------------------------------+-------------+-------|
+   | 2   | Personnaliser l’affichage des erreur 404, 500, 300                              |      →  30m |    0% |
+   |-----+---------------------------------------------------------------------------------+-------------+-------|
+   | 2   | En tant que utiliser je n’ai aucun moyen de savoir si le site possède un blog   |         30m |    0% |
+   |-----+---------------------------------------------------------------------------------+-------------+-------|
+   | 3   | En tant que utilisateur, je n’ai aucun moyen de quitter la page de présentation |         30m |    0% |
+   |     | du produit vers une autre page, tout les actions s’effectue sur la home page    |             |       |
+   |-----+---------------------------------------------------------------------------------+-------------+-------|
+
+#RELEASE-1:
+   1: Un release prend au plus 25jours
+   2: “ “ est un enble de qlq fonctionnalite qui suffit pour un MVP
+   3: The Days se calcule avec la suite de fibonacci:  0, 1, 2, 3, 5, 8, 13, 21, 34, ...
+   —————————————————————————————————————————————————————————————————————————————————————
+   OBJECTIFS:  
+               • Publier la presentation de jady aussi tôt que possible,
+               • Rendre le site disponible sans attendre que le blog soit terminer
+   —————————————————————————————————————————————————————————————————————————————————————
+
+   | RELEASE                                                                                           | SPRINT |        12 Days | DATE DEBUT                  | DATE FIN                    | STATE |
+   |---------------------------------------------------------------------------------------------------+-------:+---------------:+-----------------------------+-----------------------------+------:|
+   | Separer les composentes du project de sort que je peux llancer le site                            |    → 1 | 1j, (2heurs/j) | jeu. 25 févr. 2021 09:26:01 | ven. 26 févr. 2021 09:30:21 |    0% |
+   | avec seulement la :home_page ou le :blog XXX                                                      |        |                |                             |                             |       |
+   |---------------------------------------------------------------------------------------------------+--------+----------------+-----------------------------+-----------------------------+-------|
+   | Ecrire sur le cahier de projet Les principes de cet projets et Mes principes d’entrepre-          |    → 2 |                |                             |                             |    0% |
+   | neur, les but et objectifs du site et blog, si c’est pas le cas.                                  |        |                |                             |                             |       |
+   |---------------------------------------------------------------------------------------------------+--------+----------------+-----------------------------+-----------------------------+-------|
+   | Rédiger et mettre à jour le contenu du home_page de presentation du produit et ces references XXX |    → 3 |                |                             |                             |    0% |
+   |---------------------------------------------------------------------------------------------------+--------+----------------+-----------------------------+-----------------------------+-------|
+   | Ajouter la traduction du contenu de tout les pages                                                |    → 4 |                |                             |                             |    0% |
+   | Note:                                                                                             |        |                |                             |                             |       |
+   | • Learn(Apprendre) how to add traduction to django-project                                        |        |                |                             |                             |       |
+   | • Zinnia-blog already have a traduction fonctionnality                                            |        |                |                             |                             |       |
+   |---------------------------------------------------------------------------------------------------+--------+----------------+-----------------------------+-----------------------------+-------|
+   
+
+# BACKLOG
+   | BACKLOG DU PROJET                                                                                           |
+   |-------------------------------------------------------------------------------------------------------------|
+   |-------------------------------------------------------------------------------------------------------------|
+   | BACKLOG DU BLOG                                                                                             |
+   |-------------------------------------------------------------------------------------------------------------|
+   |-------------------------------------------------------------------------------------------------------------|
+   | Ordonner le contenu de cet ‘BACKLOG BLOG’                                                                   |
+   |-------------------------------------------------------------------------------------------------------------|
+   | Add sidebar verticale, after change position and improve it                                                 |
+   |-------------------------------------------------------------------------------------------------------------|
+   | Ajouter au dessus de la list des articles les choix de categories, Tags,                                    |
+   | Auteurs, etc...                                                                                             |
+   |-------------------------------------------------------------------------------------------------------------|
+   | • Definir les pages utiles, DONE                                                                            |
+   |-------------------------------------------------------------------------------------------------------------|
+   | DEFINIR LES PAGES PAS NON UTILES:                                                                           |
+   |-------------------------------------------------------------------------------------------------------------|
+   | Personnaliser/Supprimer Button titre de la page                                                             |
+   |-------------------------------------------------------------------------------------------------------------|
+   | Personnaliser/Supprimer Button continuer la lecture                                                         |
+   |-------------------------------------------------------------------------------------------------------------|
+   | Personnaliser/Supprimer Lien vers les commentaires sous Continuer La lecture                                |
+   |-------------------------------------------------------------------------------------------------------------|
+   | Personnaliser/Customiser la page qui affiche la liste des articles d’une categorie.                         |
+   |-------------------------------------------------------------------------------------------------------------|
+   | Personnaliser/Supprimer lien des categorie au dessus des artcicles, sur list_article                        |
+   |-------------------------------------------------------------------------------------------------------------|
+   | Personnaliser/Customiser la page qui affiche la list des articles d’un tag.                                 |
+   |-------------------------------------------------------------------------------------------------------------|
+   | Personnaliser/Supprimer les tags sous le buttons continuer la lecture                                       |
+   |-------------------------------------------------------------------------------------------------------------|
+   | • Personnaliser l’affichage des sidebar                                                                     |
+   |-------------------------------------------------------------------------------------------------------------|
+   | • Supprimer les button qui mene aux autres pages non utiles/personnaliser de Zinnia blog,                   |
+   |-------------------------------------------------------------------------------------------------------------|
+   | • Personnaliser les pages.                                                                                  |
+   |-------------------------------------------------------------------------------------------------------------|
+   | Add video demo to home page like {Arsha template home page}                                                 |
+   |-------------------------------------------------------------------------------------------------------------|
+   | Add siteMap avec Zinnia Django:                                                                             |
+   |-------------------------------------------------------------------------------------------------------------|
+   | → Zinnia: Possibiliter de restriendre la vu de detail_article avec login                                    |
+   | Url:   https://github.com/Fantomas42/django-blog-zinnia/blob/develop/docs/getting-started/configuration.rst |
+   |-------------------------------------------------------------------------------------------------------------|
+   | Changer ZINNIA_PROTOCOL from to https, if l’application possède un nom de domain avec ssl-security          |
+   |-------------------------------------------------------------------------------------------------------------|
+
+
+# LES SUJETS DE BLOG
+   | ID | TITRE | TYPE/CATEGORIE | OBJETIFS | ECRIT LE | PUBLIER LE |
+   |----+-------+----------------+----------+----------+------------|
+   |    |       |                |          |          |            |
+
+
+# REFERENCES
+   | ID | TYPE | RÉFERENCE                                                                                            | FOR        |
+   |----+------+------------------------------------------------------------------------------------------------------+------------|
+   | 0  | lien | Django Zinnia github Url: https://github.com/Fantomas42/django-blog-zinnia                           | blog       |
+   |----+------+------------------------------------------------------------------------------------------------------+------------|
+   | 1  | lien | Docs Zinnia: https://django-blog-zinnia.readthedocs.io/en/latest/how-to/customize_look_and_feel.html | blog       |
+   |----+------+------------------------------------------------------------------------------------------------------+------------|
+   | 2  | lien | Detail page: https://www.bootdey.com/snippets/view/blog-detail-page                                  | blog       |
+   |----+------+------------------------------------------------------------------------------------------------------+------------|
+   | 3  | lien | Article page: https://www.bootdey.com/snippets/view/Latest-News-section                              | blog       |
+   |----+------+------------------------------------------------------------------------------------------------------+------------|
+   | 4  | lien | Des images pour tester le code HTML: https://via.placeholder.com/350x280/FFB6C1/000000               | Image-test |
+   |----+------+------------------------------------------------------------------------------------------------------+------------|
+   | 5  | lien | Personnaliser l’article_detail: https://www.bootdey.com/snippets/view/blog-detail-page               | blog       |
+   |----+------+------------------------------------------------------------------------------------------------------+------------|
+
+# DONE
+   | DONE                                                                        | DATE DEBUT | DATE FIN   |
+   |-----------------------------------------------------------------------------+------------+------------|
+   | change name ‘jady1.0’ to ‘jady’ in others files, find others file with grep | ...        | Before Fev |
+   |-----------------------------------------------------------------------------+------------+------------|
+   | add blogging possibility to project:                                        | ...        | Before Fev |
+   | * Add posts page, post page functioinnality to project                      |            |            |
+   | * add posts and post template to template                                   |            |            |
+   | * Copy zinnia_template to my project                                        |            |            |
+   | Normaliser la taille de post info                                           |            |            |
+   | Afficher la photo du post info a 350x280 with versatileImageField           |            |            |
+   |-----------------------------------------------------------------------------+------------+------------|
+   | Custom list_article page DONE                                               |            |            |
+   | NOTE:                                                                       |            |            |
+   | • lien https://www.bootdey.com/snippets/view/Latest-News-section            |            |            |
+   | Priority:                                                                   |            |            |
+   | • L’affichage de la list des articles DONE                                  |            |            |
+   |-----------------------------------------------------------------------------+------------+------------|
+   | Personnaliser/Customiser les urls de zinnia pour les redapter a mes besions |            |            |
+   | Afficher les informations d’un post sur la page entry_detail                |            |            |
+   |-----------------------------------------------------------------------------+------------+------------|
+   | Personnaliser/Customiser detail_page des posts                              |            |            |
+   | Note: Ref_id=5                                                              |            |            |
+   |-----------------------------------------------------------------------------+------------+------------|
+   | Personnaliser/Customiser l’affichage de la liste des articles DONE          |            |            |
+   |-----------------------------------------------------------------------------+------------+------------|
+   | Ajouter PPOIField a ImageField                                              |            |            |
+   |-----------------------------------------------------------------------------+------------+------------|
+   | Travailler l’affichage des images avec ImageField/versatileIma...           |            |            |
+   | → L’affichage des images s’effectue avec versatileIma...                    |            |            |
+   | Note: Uninstall ImageField and Install versatileIma...                      |            |            |
+   |-----------------------------------------------------------------------------+------------+------------|
+
+
+#WARNING:
+   Warning html code: CODE PAS OPTIMAL, CHARGEMENT TROP LONG DE LA PAGE D’ACCUEIL
+   Telecharger les fichiers google_font, css et js en local Supprimer charger 
+   leurs link pour eviter le temps de chargerment long. L’ideal est de creer 
+   des caches.
+
+
+# SPRINT-0:
+   VISION:
+      Voici à quoi consiste ce projet:
+         1> Creer un site-web pour presenter jady.
+         2> Creer une communaute passionne et qui croient dans ce qu’on fait 
+            autour du produit grace aux articles, videos et idées.
+
+      Les pourquoi nous faisons ce projet:
+         0> Trouver des prospets et des clients depart le monde.
+         1> Donner les moyens a nos clients et prospects de pouvoir interagir avec nous.
+         2> Donner une image sur l’internet a jady.
+         3> Communiquer et partager la passion derriere jady.
+
+      En quoi ce projet est-il important:
+         1> La communication
+         2> La vente
+         3> Le Marketing
+         4> Avoir une communaute
+
+   UTILISATEUR:
+      Je suis alassane, je suis dans la vingtaine, j’ambitionne de:
+      1 creer un entriprise non, plusieurs même au cours de ma vie,
+      2 faires des choses qui soient utiles et très bénéfique aux gens,
+      3 des choses qui me suivivra même après ma mort
+      Je suis a la recherche des outils, des moyens unique, rapide, et direct 
+      d’atteindre mes objectif. je crois que l’information peut faire la dif-
+      ference dans mon parcour, mais ils y’ a telma que je suis perdu et frustrer.
+      Je lis beaucoup, au minimum 1heur/jour chaque jours, pour comprendre la vie
+      et apprendre de nouevelle choses et maniere de faire pour realiser mes
+      objectifs plus rapidement et pouvoir faire bcp de choses, faire bcp d’argent
+
+      :MON_GROS_PROBLEME est la masse d’informations de livre, de video et audio
+      qui existe sur comment faire ce qu’il faut qu’on y perde la tête, il y’a
+      qui sont super, d’autre evident, mais d’autre complement loufoque. 
+      Avec tout ça on est confus, perdu, et faite du surplace. 
+
+      :JE_VEUX
+      Je voudrais avoir un coach, qui sais ou je suis et ce que je cherche a atteindre
+      cherche et trier et me propose des avis trancher sur ce qu’il me faut faire et
+      apprendre pour atteindre mon but.
+
+
+# ARCHIVES SPRINTS
+

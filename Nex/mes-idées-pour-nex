@@ -1,0 +1,55 @@
+mes-idées-pour-nex
+
+ • Note taking syntax
+ • Note taking commands
+
+1 -> On se concentre que sur les entrepreneurs
+
+# IDEES POUR L’INTELLIGENCE
+   | NUM | STATE | IDEES                                                                                  | TESTER ? | VALIDE ? | DATE DEBUT | DATE FIN |
+   |----:+------:+----------------------------------------------------------------------------------------+----------+----------+------------+----------|
+   |   0 |    0% | Generer le data NLU en json format à patir du contenu du {Pouvoir Illimite de Robbins} |          |          |            |          |
+   |-----+-------+----------------------------------------------------------------------------------------+----------+----------+------------+----------|
+   |   0 |    0% | Generer le data NLU en json format à patir du contenu du {Pouvoir Illimite de Robbins} |          |          |            |          |
+   |-----+-------+----------------------------------------------------------------------------------------+----------+----------+------------+----------|
+   |   0 |    0% | Generer le data NLU en json format à patir du contenu du {Pouvoir Illimite de Robbins} |          |          |            |          |
+   |-----+-------+----------------------------------------------------------------------------------------+----------+----------+------------+----------|
+
+# NOTE DE REFLEXIONS
+   La seul objectifs actuel est de sortir quelque chose qui fonctionne avec une ou
+   des idee bien definis. que l’on peut rendre publique.
+      → Les idees:
+      • Je veux donner la possibilite a tout le monde de discuter avec Tony Robbins ou du moins
+      l’intelligence de Tony ou Elon etc.
+      • Donner vie au livre, passer du livre static au livre dynamique, ce n’est plus vous
+      qui partez chercher vers le livre pour trouver de l’informatiion essentiel mais ce
+      le livre qui vient vers. cela n’a rien avoir la recommandation sur vos goûts, mais
+      ce que vous devez absolument savoir.
+      • Nous avons lu des tas de bookings et il en reste probablement des tonnes a lire
+      et bizarrement tous semble hautement prioritaire presque de vie ou de mort.
+      mais vous avez quoi aucun ne les.
+      • A present avec Nex avez tous ce que vous avez lu et tout ce que vous devez lire
+      capable de synthetiser et filter les information et le presente selon vos objectifs
+      du moment.
+      • Nous somme orientes vers les entrepreneurs, et les fanes de developpement personnelle, pas de fiction
+      • Nex a sa propre conception du monde, de l’entrepreneuriat, et du developpement personnelle.
+      • Nex a sa propre verite, questions et reponses, qui ne depend pas de moi. 
+         • Comment faire cela ou quel est
+         le moyen le plus simple et rapide de faire cela.
+      • Nex tire sont savoir des livres et comment associe t-il les qsn aux reponses
+         ◦ Propose des questionnaires pour cerner l’utilisateur ceux qu’il savent et ne savent pas
+            ▸ Afin de leur fournir une reponse adapter a leur context actuel et niveau actuel
+         ◦ 1 Creer mon propre model question-answer generator
+         ◦ 2 Utiliser le qsn-answer generator en lui formisant comme input les chqpitres
+            extraits des livres, afin qu’ils generent les qsn-reponses pour chaq chapitre 
+         ◦ 3 Nex donne son avis a la question s’il en a et propose les idee d’autre guy comme Tony à
+             leurs super livre
+   creer un brand autour
+      → Quelles sont les solutions possible et qui peut m’aider.
+
+   Mesurer le retour et reajuster.
+      • Avec le fil de dicsution avec Nex, ceci est une mainere de mesurer le retour
+         des gens.
+
+                                     * * *
+
