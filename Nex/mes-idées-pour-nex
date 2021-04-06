@@ -6,16 +6,33 @@ mes-idées-pour-nex
 1 -> On se concentre que sur les entrepreneurs
 
 # IDEES POUR L’INTELLIGENCE
-   | NUM | STATE | IDEES                                                                                  | TESTER ? | VALIDE ? | DATE DEBUT | DATE FIN |
-   |----:+------:+----------------------------------------------------------------------------------------+----------+----------+------------+----------|
-   |   0 |    0% | Generer le data NLU en json format à patir du contenu du {Pouvoir Illimite de Robbins} |          |          |            |          |
-   |-----+-------+----------------------------------------------------------------------------------------+----------+----------+------------+----------|
-   |   0 |    0% | Generer le data NLU en json format à patir du contenu du {Pouvoir Illimite de Robbins} |          |          |            |          |
-   |-----+-------+----------------------------------------------------------------------------------------+----------+----------+------------+----------|
-   |   0 |    0% | Generer le data NLU en json format à patir du contenu du {Pouvoir Illimite de Robbins} |          |          |            |          |
-   |-----+-------+----------------------------------------------------------------------------------------+----------+----------+------------+----------|
+   | NUM | STATE | IDEES                                                                            | TESTER ? | VALIDE ? | DATE DEBUT       | DATE FIN        |
+   |----:+------:+----------------------------------------------------------------------------------+----------+----------+------------------+-----------------|
+   |     |       | → COACH & ASSISTANT DES ENTREPRENEURS ET FANE DE DEV PERSONNELLE.                |          |          |                  |                 |
+   |   0 |   65% | Une intelligence capable de converser avec nous en repondent aux                 |          |          |                  |                 |
+   |     |       | questions posées et dont les reponses vient des livre qu’il a en                 |          |          |                  |                 |
+   |     |       | memoire                                                                          | En cours |          | Before Janv 2021 | Mon 12 Avr 2021 |
+   |     |       | * Conseiller avec son propre avis sur les questions                              |          |          |                  |                 |
+   |     |       | * Conseiller avec les livre de reference, videos etc et note leur references     |          |          |                  |                 |
+   |-----+-------+----------------------------------------------------------------------------------+----------+----------+------------------+-----------------|
+   |     |       | → UN INTERLOCUTEUR & ENSEIGNANT EN LANGUE                                        |          |          |                  |                 |
+   |   1 |    0% | Une intelligence capable de converser avec nous dans une langue                  |          |          |                  |                 |
+   |     |       | que nous souhiatons nous ameliorer.                                              |          |          |                  |                 |
+   |     |       | * Capable de corriger nos erreur sur nos ecrits.                                 |          |          |                  |                 |
+   |     |       | * Capable de comprendre notre langue d’origine et nous le retour en autre lang   |          |          |                  |                 |
+   |     |       | → Tester les thématiques                                                         |          |          |                  |                 |
+   |     |       | * Spliter le livre en Questions/Reponses et *Converser sur les enseignements     |          |          |                  |                 |
+   |     |       | d’un livre Pere Riche P..., en se basant sur les themes qui le livre abord.      |          |          |                  |                 |
+   |     |       | Nex: Pose des question et donne aussi la main a l’user de poser des question     |          |          |                  |                 |
+   |-----+-------+----------------------------------------------------------------------------------+----------+----------+------------------+-----------------|
+   |     |       | → MOTEUR DE RECHERHCE DES ENTREPRENEURS ET FANE DE DEV PERSONNELLE.              |          |          |                  |                 |
+   |   2 |    0% | Un moteur de recherche intelligent dans le domaine du developpement personnelle. |          |          |                  |                 |
+   |     |       | 1 → Personnalisable, en fournissant les informations utils demander              |          |          |                  |                 |
+   |     |       | par l’intelligence, il vous fourni des informations pertinent.                   |          |          |                  |                 |
+   |-----+-------+----------------------------------------------------------------------------------+----------+----------+------------------+-----------------|
+   |     |       |                                                                                  |          |          |                  |                 |
 
-# NOTE DE REFLEXIONS
+# NOTE DE REFLEXIONS #1
    La seul objectifs actuel est de sortir quelque chose qui fonctionne avec une ou
    des idee bien definis. que l’on peut rendre publique.
       → Les idees:

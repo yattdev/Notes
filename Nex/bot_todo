@@ -18,122 +18,143 @@ position your cursor on the highlighted name and press ‘gf’ in normal mode:
 
                                      * * *
 
-   |-----------------------------------------------------------------------+---+--------+-----------------------------+-----------------------------+------|
-   | Refléchir aux l’objectifs réels à atteindre avec les valeurs ajoutés. | 4 | 1heure | ven. 26 févr. 2021 08:00:00 | ven. 26 févr. 2021 09:00:00 | 100% |
-
 # DEVELOPPEMENT:
    SPRINT-4: 
    1: DEBUT-FIN se calcule avec la suite de fibonacci:  0, 1, 2, 3, 5, 8, 13, 21, 34, ...
 
-   | NUM | DATE DEBUT —— DATE FIN                                        |   NBRE DAYS | STATE | STORY BUG |
-   |-----+---------------------------------------------------------------+------------:+------:+-----------|
-   | 2   | lun. 08 mars 2021 14:50:55 —— jeu. 11 mars. 2021 22:25:00     |       4days |    1% |           |
-   |-----+---------------------------------------------------------------+-------------+-------+-----------|
-   |-----+---------------------------------------------------------------+-------------+-------+-----------|
-   | ID  | STORIES                                                       | NBRE HEURES | STATE |           |
-   |----:+---------------------------------------------------------------+------------:+-------+-----------|
-   | -4  | Developper une Interface Graphique de communication avec jady |      5h/day |  100% |           |
-   |-----+---------------------------------------------------------------+-------------+-------+-----------|
-   SPRINT-4: 
-   1: DEBUT-FIN se calcule avec la suite de fibonacci:  0, 1, 2, 3, 5, 8, 13, 21, 34, ...
+   | NUM | DATE DEBUT —— DATE FIN                                             |   NBRE DAYS | STATE | STORY BUG |
+   |-----+--------------------------------------------------------------------+------------:+------:+-----------|
+   | 2   | Tue 30 Mar 2021 10:44:23 AM +01 —— Tue 30 Mar 2021 12:44:23 AM +01 |       4days |    1% |           |
+   |-----+--------------------------------------------------------------------+-------------+-------+-----------|
+   |-----+--------------------------------------------------------------------+-------------+-------+-----------|
+   | ID  | STORIES                                                            | NBRE HEURES | STATE |           |
+   |----:+--------------------------------------------------------------------+------------:+-------+-----------|
+   | 1   | Definir les reponses pour: greet                                   |         30m |    0% |           |
+   |-----+--------------------------------------------------------------------+-------------+-------+-----------|
+   | 2   | Definir les reponses pour: need_help                               |         30m |    0% |           |
+   |-----+--------------------------------------------------------------------+-------------+-------+-----------|
+   | 3   | Definir les reponses pour: ask_bot_possibility                     |         30m |    0% |           |
+   |-----+--------------------------------------------------------------------+-------------+-------+-----------|
+   | 4   | Definir les reponses pour: others                                  |         30m |    0% |           |
+   |-----+--------------------------------------------------------------------+-------------+-------+-----------|
 
-   | NUM | DATE DEBUT —— DATE FIN                                        |   NBRE DAYS | STATE | STORY BUG |
-   |-----+---------------------------------------------------------------+------------:+------:+-----------|
-   | 2   | lun. 08 mars 2021 14:50:55 —— jeu. 11 mars. 2021 22:25:00     |       4days |    1% |           |
-   |-----+---------------------------------------------------------------+-------------+-------+-----------|
-   |-----+---------------------------------------------------------------+-------------+-------+-----------|
-   | ID  | STORIES                                                       | NBRE HEURES | STATE |           |
-   |----:+---------------------------------------------------------------+------------:+-------+-----------|
-   | -4  | Developper une Interface Graphique de communication avec jady |      5h/day |  100% |           |
-   |-----+---------------------------------------------------------------+-------------+-------+-----------|
-
-#RELEASE-1: Realiser un MVP 1.0
+#RELEASE-2: Realiser un MP FONCTIONNELLE or VIABLE → MVP
    1: Un release prend au plus 25jours
    2: “ “ est un enble de qlq fonctionnalite qui suffit pour un MVP
    3: The Days se calcule avec la suite de fibonacci:  0, 1, 2, 3, 5, 8, 13, 21, 34, ...
 
-   | RELEASE                                                                                   | SPRINT |  1x Days | DATE DEBUT                  | DATE FIN                    | STATE |
-   |-------------------------------------------------------------------------------------------+-------:+---------:+-----------------------------+-----------------------------+------:|
-   | Generer le data NLU en json format à patir du contenu du {Pouvoir Illimite de Robbins}    |      1 |        6 | mar. 09 févr. 2021 09:20:34 | lun. 15 févr. 2021 12:00:00 |  100% |
-   |-------------------------------------------------------------------------------------------+--------+----------+-----------------------------+-----------------------------+-------|
-   | Entrainer le bot sur le data NLU, du {Pouvoir Illimite de Robbins}                        |      2 |       10 | lun. 15 févr. 2021 17:30:00 | jeu. 25 févr. 2021 12:40:00 |  100% |
-   |-------------------------------------------------------------------------------------------+--------+----------+-----------------------------+-----------------------------+-------|
-   | Ordonner cet backlog du plus important ou urgent au plus farfelu                          |      3 | 30Munite | jeu. 25 févr. 2021 13:19:11 | mar. 16 févr. 2021 12:30:00 |  100% |
-   |-------------------------------------------------------------------------------------------+--------+----------+-----------------------------+-----------------------------+-------|
-   | Generer les data pour les autres intents telque: greet, need_help, ask_bot_pos-           |      5 |        1 | jeu. 25 févr. 2021 16:21:33 | ven. 26 févr. 2021 18:34:15 |  100% |
-   | sibility etc...                                                                           |        |          |                             |                             |       |
-   |-------------------------------------------------------------------------------------------+--------+----------+-----------------------------+-----------------------------+-------|
-   | Developper une Interface Graphique de communication avec jady                             |      6 |        3 | ven. 26 févr. 2021 18:34:15 | lun. 01 mars. 2021 16:21:48 |    0% |
-   |-------------------------------------------------------------------------------------------+--------+----------+-----------------------------+-----------------------------+-------|
-   | Definir les reponses des data generer pour : greet, need_help, ask_bot_pos-               |      7 |        1 |                             |                             |       |
-   | sibility etc...                                                                           |        |          |                             |                             |       |
-   |-------------------------------------------------------------------------------------------+--------+----------+-----------------------------+-----------------------------+-------|
-   | 2→ definir les entités possibles et les slots                                             |      8 |          |                             |                             |       |
-   |-------------------------------------------------------------------------------------------+--------+----------+-----------------------------+-----------------------------+-------|
-   | 1 → Ajouter un formulaire d’enregistement des user dans l’interface                       |      9 |        1 |                             |                             |       |
-   |-------------------------------------------------------------------------------------------+--------+----------+-----------------------------+-----------------------------+-------|
-   | 2 → Engistrer dans la base de données les informations saisie par l’utilisateur a apartir |     10 |          |                             |                             |       |
-   | des slots.                                                                                |        |          |                             |                             |       |
-   |-------------------------------------------------------------------------------------------+--------+----------+-----------------------------+-----------------------------+-------|
+   | RELEASE                                                                                | SPRINT | 5days | DATE DEBUT                      | DATE FIN                        | STATE |
+   |----------------------------------------------------------------------------------------+-------:+------:+---------------------------------+---------------------------------+------:|
+   |----------------------------------------------------------------------------------------+--------+-------+---------------------------------+---------------------------------+-------|
+   | Integrer la configuration optimal de                                                   |      9 |     1 |                                 |                                 |    0% |
+   |----------------------------------------------------------------------------------------+--------+-------+---------------------------------+---------------------------------+-------|
+   | Integrer la Policie RulePolicie, by create rule.yml more info on:                      |      1 |    -1 | Tue 30 Mar 2021 10:44:23 AM +01 | Tue 30 Mar 2021 12:44:29 AM +01 |    0% |
+   | https://rasa.com/docs/rasa/policies, CTRL+Click to open link on browser                |        |       |                                 |                                 |       |
+   |----------------------------------------------------------------------------------------+-------:+------:+---------------------------------+---------------------------------+------:|
+   | Definir les reponses des data generer pour : greet, need_help, ask_bot_pos-            |      2 |    -1 |                                 |                                 |    0% |
+   | sibility etc.                                                                          |        |       |                                 |                                 |       |
+   |----------------------------------------------------------------------------------------+--------+-------+---------------------------------+---------------------------------+-------|
+   | FALLBACK AND HUMAN HANDOFF: Ceci est un guide sur la façon de gérer les différentes    |        |       |                                 |                                 |    0% |
+   | incomprehension du bot: https://rasa.com/docs/rasa/fallback-handoff                    |        |       |                                 |                                 |       |
+   |----------------------------------------------------------------------------------------+--------+-------+---------------------------------+---------------------------------+-------|
+   | HANDLING UNEXPECTED INPUT: quand les utilisateurs diront des choses inattendues.       |        |       |                                 |                                 |    0% |
+   | Cela aide à gérer les entrées inattendues: https://rasa.com/docs/rasa/unexpected-input |        |       |                                 |                                 |       |
+   |----------------------------------------------------------------------------------------+--------+-------+---------------------------------+---------------------------------+-------|
+   | CONTEXTUAL CONVERSATIONS: Taking context into account is often key to providing a      |        |       |                                 |                                 |    0% |
+   | good user experience. This page is a guide to creating contextual conversation         |        |       |                                 |                                 |       |
+   | patterns. https://rasa.com/docs/rasa/contextual-conversations                          |        |       |                                 |                                 |       |
+   |----------------------------------------------------------------------------------------+--------+-------+---------------------------------+---------------------------------+-------|
+   | REACHING OUT TO THE USER: want to prompt the user if they haven't sent a               |        |       |                                 |                                 |    0% |
+   | message for a while. https://rasa.com/docs/rasa/reaching-out-to-user                   |        |       |                                 |                                 |       |
+   |----------------------------------------------------------------------------------------+--------+-------+---------------------------------+---------------------------------+-------|
+   | Prepare Bot for Production: https://rasa.com/docs/rasa/messaging-and-voice-channels    |      9 |     1 |                                 |                                 |    0% |
+   |----------------------------------------------------------------------------------------+--------+-------+---------------------------------+---------------------------------+-------|
+   | Entainer le bot jusqu’a trouvez un models dont les responses sont correct à 99%        |      6 |       |                                 |                                 |    0% |
+   |----------------------------------------------------------------------------------------+--------+-------+---------------------------------+---------------------------------+-------|
+   | Launch !!! Partager jady au plus grands nobre: Facebook, Youtube, tweeter, Meduin etc  |        |       |                                 |                                 |    0% |
 
 # BACKLOG
-   | BACKLOG                                                                                     |
-   |---------------------------------------------------------------------------------------------|
-   |---------------------------------------------------------------------------------------------|
-   | Launch !!! Partager jady au plus grands nobre: Facebook, Youtube, tweeter, Meduin etc       |
-   |---------------------------------------------------------------------------------------------|
-   | Mise à jour le domaine file du NLU avec pour inclures les slots, entités etc...             |
-   |---------------------------------------------------------------------------------------------|
-   | Permetter aux Users d’attribuer des notes à des reponses au questions                       |
-   |---------------------------------------------------------------------------------------------|
-   | Donner des rang au qestions, c-a-d a chque chapter. Et modifier ces le rang selon la no-    |
-   | te donner par l’utilisateur, et selon son nbre de vu.                                       |
-   |---------------------------------------------------------------------------------------------|
-   | Retourner avec la reponse si le chapitre-ci est lier a un précédent ou au suivant.          |
-   |---------------------------------------------------------------------------------------------|
-   | Entrainer le bot sur le contenu de 5 livres de plus.                                        |
-   |---------------------------------------------------------------------------------------------|
-   | Permetter aux Users de choisir entre les themes: Vente, Marketing, Finance ou l’Argent,     |
-   | Create de valeur                                                                            |
-   |---------------------------------------------------------------------------------------------|
-   | Developper un module qui met a jour le dossier ‘jsonFrench’ et l’index de WHOOSH des que le |
-   | dossier ‘epubFrench’ est modifier                                                           |
-   |---------------------------------------------------------------------------------------------|
-   | Ecrire sur son cahier de projet Les principes de cet projets et Mes principes d’entrepre-   |
-   | neur.                                                                                       |
-   |---------------------------------------------------------------------------------------------|
-   | 1→ Definir le Preface des livres comme le field ‘context’ dans le BookSchema si la descrip- |
-   | tion est vide. car context = descriptions                                                   |
-   | 2→ OU Developper un proramme qui utilise le ISBN du livre pour trouvez la description sur   |
-   | Amazon/Zlib.org ou autres sites.                                                            |
-   |---------------------------------------------------------------------------------------------|
-   | Permettre a Jady d’afficher “l’image de couverture” du livre avec la reponse.               |
-   |---------------------------------------------------------------------------------------------|
-   | Permettre Jady de retourner les mots qu’il ne connais pas: sexe...                          |
-   |---------------------------------------------------------------------------------------------|
-   | Permettre a Jady de reconnaitre les insultes et de repondre.                                |
-   |---------------------------------------------------------------------------------------------|
-   | Permettre a Jady de faire des blagues.                                                      |
-   |---------------------------------------------------------------------------------------------|
-   | Creer un module pour mettre ajour automatiquement le domaine file  yaml/yml                 |
-   |---------------------------------------------------------------------------------------------|
-   | ### RELEASE-1 —> SPRINT-1 ###                                                               |
-   | — Generer le data NLU en json format à patir du contenu du {Pouvoir Illimite de Robbins}    |
-   | ——— ### UNE STORY-7 ####                                                                    |
-   | ... Jady: COMMENT DÉCOUVRIR LA STRATÉGIE D’UN INDIVIDU,                                     |
-   | pour ... de “ “.                                                                            |
-   | NOTE: Je l’es pas fait par ce que ce n’etait pas important, en ce moment                    |
-   |---------------------------------------------------------------------------------------------|
-   | ### RELEASE-1 —> SPRINT-1 ###                                                               |
-   | — Generer le data NLU en json format à patir du contenu du {Pouvoir Illimite de Robbins}    |
-   | ——— ### UNE STORY-8 ####                                                                    |
-   | ... Jady: COMMENT IMITER CEUX QUI REUSSISSENT, pour ...                                     |
-   | de la maniere dont certain font pour avoir des super re-                                    |
-   | sultats.                                                                                    |
-   | NOTE: Je l’es pas fait par ce que ce n’etait pas important, en ce moment                    |
-   |---------------------------------------------------------------------------------------------|
+   | BACKLOG                                                                                      |
+   |----------------------------------------------------------------------------------------------|
+   |----------------------------------------------------------------------------------------------|
+   | Implementter un moyen de mesurer les données important like: hit, acctive user/day, frequent |
+   | questions etc.                                                                               |
+   |----------------------------------------------------------------------------------------------|
+   | Definir les entites et les slots des Utterances.txt                                          |
+   |----------------------------------------------------------------------------------------------|
+   | Handling Business Logic: Ajouter un formulaire d’enregistement des user dans l’interface     |
+   | Info link: https://rasa.com/docs/rasa/business-logic                                         |
+   |----------------------------------------------------------------------------------------------|
+   | Engistrer dans la base de données les informations saisie par l’usr a apartir des slots      |
+   |----------------------------------------------------------------------------------------------|
+   | Implementer le meilleurs pratique au developpement du bot. follow link below for more info   |
+   | https://rasa.com/docs/rasa/conversation-driven-development                                   |
+   |----------------------------------------------------------------------------------------------|
+   | RASA X: Tester Rasa-x afin de mesurer son impact sur le dev du bot                           |
+   |----------------------------------------------------------------------------------------------|
+   | Permetter aux Users d’attribuer des notes à des reponses au questions                        |
+   |----------------------------------------------------------------------------------------------|
+   | Donner des rang au qestions, c-a-d a chque chapter. Et modifier ces le rang selon la no-     |
+   | te donner par l’utilisateur, et selon son nbre de vu.                                        |
+   |----------------------------------------------------------------------------------------------|
+   | Retourner avec la reponse si le chapitre-ci est lier a un précédent ou au suivant.           |
+   |----------------------------------------------------------------------------------------------|
+   | Entrainer le bot sur le contenu de 5 livres de plus.                                         |
+   |----------------------------------------------------------------------------------------------|
+   | Permetter aux Users de choisir entre les themes: Vente, Marketing, Finance ou l’Argent,      |
+   | Create de valeur                                                                             |
+   |----------------------------------------------------------------------------------------------|
+   | Developper un module qui met a jour le dossier ‘jsonFrench’ et l’index de WHOOSH des que le  |
+   | dossier ‘epubFrench’ est modifier                                                            |
+   |----------------------------------------------------------------------------------------------|
+   | Ecrire sur son cahier de projet Les principes de cet projets et Mes principes d’entrepre-    |
+   | neur.                                                                                        |
+   |----------------------------------------------------------------------------------------------|
+   | 1→ Definir le Preface des livres comme le field ‘context’ dans le BookSchema si la descrip-  |
+   | tion est vide. car context = descriptions                                                    |
+   | 2→ OU Developper un proramme qui utilise le ISBN du livre pour trouvez la description sur    |
+   | Amazon/Zlib.org ou autres sites.                                                             |
+   |----------------------------------------------------------------------------------------------|
+   | Permettre a Jady d’afficher “l’image de couverture” du livre avec la reponse.                |
+   |----------------------------------------------------------------------------------------------|
+   | Permettre Jady de retourner les mots qu’il ne connais pas: sexe...                           |
+   |----------------------------------------------------------------------------------------------|
+   | Permettre a Jady de reconnaitre les insultes et de repondre.                                 |
+   |----------------------------------------------------------------------------------------------|
+   | Permettre a Jady de faire des blagues.                                                       |
+   |----------------------------------------------------------------------------------------------|
+   | Creer un module pour mettre ajour automatiquement le domaine file  yaml/yml                  |
+   |----------------------------------------------------------------------------------------------|
+   | ### RELEASE-1 —> SPRINT-1 ###                                                                |
+   | — Generer le data NLU en json format à patir du contenu du {Pouvoir Illimite de Robbins}     |
+   | ——— ### UNE STORY-7 ####                                                                     |
+   | ... Jady: COMMENT DÉCOUVRIR LA STRATÉGIE D’UN INDIVIDU,                                      |
+   | pour ... de “ “.                                                                             |
+   | NOTE: Je l’es pas fait par ce que ce n’etait pas important, en ce moment                     |
+   |----------------------------------------------------------------------------------------------|
+   | ### RELEASE-1 —> SPRINT-1 ###                                                                |
+   | — Generer le data NLU en json format à patir du contenu du {Pouvoir Illimite de Robbins}     |
+   | ——— ### UNE STORY-8 ####                                                                     |
+   | ... Jady: COMMENT IMITER CEUX QUI REUSSISSENT, pour ...                                      |
+   | de la maniere dont certain font pour avoir des super re-                                     |
+   | sultats.                                                                                     |
+   | NOTE: Je l’es pas fait par ce que ce n’etait pas important, en ce moment                     |
+   |----------------------------------------------------------------------------------------------|
 
 
+                                     * * *
+
+# IMPROVEMENTS
+   | Details                                                                            | Links                                               |
+   |------------------------------------------------------------------------------------+-----------------------------------------------------|
+   | Learn TEXT CLASSIFICATION to improve user input by bot                             | search on Google                                    |
+   |------------------------------------------------------------------------------------+-----------------------------------------------------|
+   | Comprendre plus RASA-ACTION-SERVEUR pour mieux influer sur la conversion bot-user  | https://rasa.com/docs/action-server/                |
+   |------------------------------------------------------------------------------------+-----------------------------------------------------|
+   | Automatic-Question-Generator: pour generer automatiquement des questions apartir   | Dans la list de lecture de Google chrome            |
+   | des contenu d’un chapitre.                                                         |                                                     |
+   |------------------------------------------------------------------------------------+-----------------------------------------------------|
+   | S’informer sur les outils de l’explosion.ia comment elles peuvent ameliorer le bot | Extension de l’explosion est déjà installé sur Jady |
 
                                      * * *
 
@@ -472,3 +493,35 @@ position your cursor on the highlighted name and press ‘gf’ in normal mode:
 
 # Archive sprint-3: 
    → Ordonner cet backlog du plus important ou urgent au plus farfelu: 30 Munite 
+
+# Archive sprint-4: 
+   1: DEBUT-FIN se calcule avec la suite de fibonacci:  0, 1, 2, 3, 5, 8, 13, 21, 34, ...
+
+   | NUM | DATE DEBUT —— DATE FIN                                        |   NBRE DAYS | STATE | STORY BUG |
+   |-----+---------------------------------------------------------------+------------:+------:+-----------|
+   | 2   | lun. 08 mars 2021 14:50:55 —— jeu. 11 mars. 2021 22:25:00     |       4days |    1% |           |
+   |-----+---------------------------------------------------------------+-------------+-------+-----------|
+   |-----+---------------------------------------------------------------+-------------+-------+-----------|
+   | ID  | STORIES                                                       | NBRE HEURES | STATE |           |
+   |----:+---------------------------------------------------------------+------------:+-------+-----------|
+   | -4  | Connecter l’intelligence=jady a une plateforme like facebook ... |      5h/day |  100% |           |
+   |-----+---------------------------------------------------------------+-------------+-------+-----------|
+
+# Archive RELEASE-1: UN MP Realiser But Non fonctionnelle or V:Viable
+   1: Un release prend au plus 25jours
+   2: “ “ est un enble de qlq fonctionnalite qui suffit pour un MVP
+   3: The Days se calcule avec la suite de fibonacci:  0, 1, 2, 3, 5, 8, 13, 21, 34, ...
+
+   | RELEASE                                                                                   | SPRINT |  1x Days | DATE DEBUT                  | DATE FIN                    | STATE |
+   |-------------------------------------------------------------------------------------------+-------:+---------:+-----------------------------+-----------------------------+------:|
+   | Generer le data NLU en json format à patir du contenu du {Pouvoir Illimite de Robbins}    |      1 |        6 | mar. 09 févr. 2021 09:20:34 | lun. 15 févr. 2021 12:00:00 |  100% |
+   |-------------------------------------------------------------------------------------------+--------+----------+-----------------------------+-----------------------------+-------|
+   | Entrainer le bot sur le data NLU, du {Pouvoir Illimite de Robbins}                        |      2 |       10 | lun. 15 févr. 2021 17:30:00 | jeu. 25 févr. 2021 12:40:00 |  100% |
+   |-------------------------------------------------------------------------------------------+--------+----------+-----------------------------+-----------------------------+-------|
+   | Ordonner cet backlog du plus important ou urgent au plus farfelu                          |      3 | 30Munite | jeu. 25 févr. 2021 13:19:11 | mar. 16 févr. 2021 12:30:00 |  100% |
+   |-------------------------------------------------------------------------------------------+--------+----------+-----------------------------+-----------------------------+-------|
+   | Generer les data pour les autres intents telque: greet, need_help, ask_bot_pos-           |      5 |        1 | jeu. 25 févr. 2021 16:21:33 | ven. 26 févr. 2021 18:34:15 |  100% |
+   | sibility etc...                                                                           |        |          |                             |                             |       |
+   |-------------------------------------------------------------------------------------------+--------+----------+-----------------------------+-----------------------------+-------|
+   | Connecter l’intelligence=jady a une plateforme like facebook ...                             |      6 |        5 | ven. 26 févr. 2021 18:34:15 | mer. 03 mars. 2021 16:21:48 |    100% |
+   |-------------------------------------------------------------------------------------------+--------+----------+-----------------------------+-----------------------------+-------|
