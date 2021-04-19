@@ -11,8 +11,10 @@ mes-idées-pour-nex
    |     |       | → COACH & ASSISTANT DES ENTREPRENEURS ET FANE DE DEV PERSONNELLE.                |          |          |                  |                 |
    |   0 |   65% | Une intelligence capable de converser avec nous en repondent aux                 |          |          |                  |                 |
    |     |       | questions posées et dont les reponses vient des livre qu’il a en                 |          |          |                  |                 |
-   |     |       | memoire                                                                          | En cours |          | Before Janv 2021 | Mon 12 Avr 2021 |
+   |     |       | memoire et de ca base de connaissances sur le sujet.                             | En cours |          | Before Janv 2021 | Mon 12 Avr 2021 |
+   |     |       | Une assistance virtuel qui:                                                      |          |          |                  |                 |
    |     |       | * Conseiller avec son propre avis sur les questions                              |          |          |                  |                 |
+   |     |       | * Fait de suggestion de livre, de competences etc...                              |          |          |                  |                 |
    |     |       | * Conseiller avec les livre de reference, videos etc et note leur references     |          |          |                  |                 |
    |-----+-------+----------------------------------------------------------------------------------+----------+----------+------------------+-----------------|
    |     |       | → UN INTERLOCUTEUR & ENSEIGNANT EN LANGUE                                        |          |          |                  |                 |
@@ -31,6 +33,67 @@ mes-idées-pour-nex
    |     |       | par l’intelligence, il vous fourni des informations pertinent.                   |          |          |                  |                 |
    |-----+-------+----------------------------------------------------------------------------------+----------+----------+------------------+-----------------|
    |     |       |                                                                                  |          |          |                  |                 |
+
+
+# IMPLEMENTATION DE L’IDEE 0
+   Je dois avoir une base donnée de question et reponse,
+   Mais ca je les rendus dynamiques avec la recherches de repondes dans avec le moteur de recherches 
+   c.a.d que l’ensble des qsn sont les titre des chapitre des livre et des grandes lignes et il y’a
+   aussi des livre qui contient une liste de question tres pertinentes.
+   Donc en plus je dois trouver des questions avce les reponses fournis par moi meme.
+
+   Comme dans le livre da l’art subtil de s’enfoutre, la franchise radicale de Marc Manson,
+   Comme dans le livre de Nextflix la franchise radicale de Red et l’auteur
+
+   Je veux que jady est une opinions bien tranché sur les sujets peu import s’il y’a des gens qui 
+   le deteste pour ca, c’est OK.
+   
+   Je veux un model artifiel qui a une positionement sur comment il vois les choses
+   Je veux un model articfiel qui se base sur la connaissances des livres pour me
+   donner une reponse.
+   Je veux un model articfiel qui me propose des livre sur mon status actuel de startoper
+   Je veux un model artifiel qui me conseil sur comment voir la vie et avancer dans l’entrepreneuriat
+   Je veux un model articfiel qui me propose des moyens d’etre super productif selon mon planing base
+   sur ce qu’il des leaders du business.
+   Je veux un model artifiel qui me propose une maniere de penser sur la route de l’entrepreneurait.
+   Je veux un model artifiel qui me donne sont idee sur un sujet et donne la possibilite d’aller tres loin. 
+
+   Je crois que la prochaine etape sera de trouver des questions vraiment sur les livre de references dans un domaine
+   bien particulier et specific c.a.d soit developpement soit soit business, et dans le business avoir une orientation
+   tres claire une positionement bien definis de comment faire le business.
+
+   Je ne veux pas plus de connaissance mais de l’experience, de l’experience c’est pour cette raison
+   que je tien a ce que le bot est sont propre opinion.
+
+   Je veux 2choses dans jady:
+      1 → Une intelligence qui converse avec moi et repondes a mes question en se basant sur les contenu des livres
+         qu’il possedant dans sa base de donnee,
+         Actuellement Nex peut repondre en ce basant sur les chapitres des livres qu’il possedant en memoire
+         Apres ça avec une public qui commence a l’apprecier il se fait une notorieté dans le domaine donc 
+         propose son avis de temps en temps. 
+         a partir de ce moment il donne complement son avis sur des sujets.
+      2 → Une intelligence qui me donne de l’information selon son propre avis des chema mental qu’il possedant
+
+   Donc il y’a 2 chose a faire:
+      1 → Entrainer Nex sur qsn et reponses des livres de references.
+      2 → Entrainer Nex sur qsn-reponses qui lui est propre.
+
+   BUT:
+      Je vais tout d’abord developper un bot capable de repondre en ce
+      basant ce qu’il sait et sur des supers livres qu’il a en memoire,
+         → Donne son avis et fournis en plus les retours des livres q’il a en memoire
+         → A la difference qu’il est destiner au startoper et fait par les startoper donc te sort
+         des infos qui vont te servir que si tu est dans l’univer des startoper 
+         → Te fournir des informations selon des infos qu’il possed de toi et et possedent son propre 
+         avis sur les sujets.
+
+      COMMENT, COMMENT ALLER D’OU JE SUIS A CE BUT.
+      1 → J’ai deja un schema du plan a suive donc la plus grande tache est faite
+         Ce qui me manque ce sont:
+         • Les qsn et  reponses propres a Nex
+         • Les 3livres a implementer au depart
+         • Creer suffisament de story
+
 
 # NOTE DE REFLEXIONS #1
    La seul objectifs actuel est de sortir quelque chose qui fonctionne avec une ou
