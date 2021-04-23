@@ -37,7 +37,7 @@ mes-idées-pour-nex
 
 # IMPLEMENTATION DE L’IDEE 0
    Je dois avoir une base donnée de question et reponse,
-   Mais ca je les rendus dynamiques avec la recherches de repondes dans avec le moteur de recherches 
+   Mais ca je les rendus dynamiques avec la recherches de repondes dans avec le moteur de recherches
    c.a.d que l’ensble des qsn sont les titre des chapitre des livre et des grandes lignes et il y’a
    aussi des livre qui contient une liste de question tres pertinentes.
    Donc en plus je dois trouver des questions avce les reponses fournis par moi meme.
@@ -45,9 +45,9 @@ mes-idées-pour-nex
    Comme dans le livre da l’art subtil de s’enfoutre, la franchise radicale de Marc Manson,
    Comme dans le livre de Nextflix la franchise radicale de Red et l’auteur
 
-   Je veux que jady est une opinions bien tranché sur les sujets peu import s’il y’a des gens qui 
+   Je veux que jady est une opinions bien tranché sur les sujets peu import s’il y’a des gens qui
    le deteste pour ca, c’est OK.
-   
+
    Je veux un model artifiel qui a une positionement sur comment il vois les choses
    Je veux un model articfiel qui se base sur la connaissances des livres pour me
    donner une reponse.
@@ -56,7 +56,7 @@ mes-idées-pour-nex
    Je veux un model articfiel qui me propose des moyens d’etre super productif selon mon planing base
    sur ce qu’il des leaders du business.
    Je veux un model artifiel qui me propose une maniere de penser sur la route de l’entrepreneurait.
-   Je veux un model artifiel qui me donne sont idee sur un sujet et donne la possibilite d’aller tres loin. 
+   Je veux un model artifiel qui me donne sont idee sur un sujet et donne la possibilite d’aller tres loin.
 
    Je crois que la prochaine etape sera de trouver des questions vraiment sur les livre de references dans un domaine
    bien particulier et specific c.a.d soit developpement soit soit business, et dans le business avoir une orientation
@@ -69,8 +69,8 @@ mes-idées-pour-nex
       1 → Une intelligence qui converse avec moi et repondes a mes question en se basant sur les contenu des livres
          qu’il possedant dans sa base de donnee,
          Actuellement Nex peut repondre en ce basant sur les chapitres des livres qu’il possedant en memoire
-         Apres ça avec une public qui commence a l’apprecier il se fait une notorieté dans le domaine donc 
-         propose son avis de temps en temps. 
+         Apres ça avec une public qui commence a l’apprecier il se fait une notorieté dans le domaine donc
+         propose son avis de temps en temps.
          a partir de ce moment il donne complement son avis sur des sujets.
       2 → Une intelligence qui me donne de l’information selon son propre avis des chema mental qu’il possedant
 
@@ -83,8 +83,8 @@ mes-idées-pour-nex
       basant ce qu’il sait et sur des supers livres qu’il a en memoire,
          → Donne son avis et fournis en plus les retours des livres q’il a en memoire
          → A la difference qu’il est destiner au startoper et fait par les startoper donc te sort
-         des infos qui vont te servir que si tu est dans l’univer des startoper 
-         → Te fournir des informations selon des infos qu’il possed de toi et et possedent son propre 
+         des infos qui vont te servir que si tu est dans l’univer des startoper
+         → Te fournir des informations selon des infos qu’il possed de toi et et possedent son propre
          avis sur les sujets.
 
       COMMENT, COMMENT ALLER D’OU JE SUIS A CE BUT.
@@ -113,7 +113,7 @@ mes-idées-pour-nex
       du moment.
       • Nous somme orientes vers les entrepreneurs, et les fanes de developpement personnelle, pas de fiction
       • Nex a sa propre conception du monde, de l’entrepreneuriat, et du developpement personnelle.
-      • Nex a sa propre verite, questions et reponses, qui ne depend pas de moi. 
+      • Nex a sa propre verite, questions et reponses, qui ne depend pas de moi.
          • Comment faire cela ou quel est
          le moyen le plus simple et rapide de faire cela.
       • Nex tire sont savoir des livres et comment associe t-il les qsn aux reponses
@@ -121,7 +121,7 @@ mes-idées-pour-nex
             ▸ Afin de leur fournir une reponse adapter a leur context actuel et niveau actuel
          ◦ 1 Creer mon propre model question-answer generator
          ◦ 2 Utiliser le qsn-answer generator en lui formisant comme input les chqpitres
-            extraits des livres, afin qu’ils generent les qsn-reponses pour chaq chapitre 
+            extraits des livres, afin qu’ils generent les qsn-reponses pour chaq chapitre
          ◦ 3 Nex donne son avis a la question s’il en a et propose les idee d’autre guy comme Tony à
              leurs super livre
    creer un brand autour
@@ -131,5 +131,22 @@ mes-idées-pour-nex
       • Avec le fil de dicsution avec Nex, ceci est une mainere de mesurer le retour
          des gens.
 
-                                     * * *
+# NOTE: Je me rend compte que des fois, meme tres souvent qu’on ne sais pas quel question
+         au chatbot, on est la, assis comme un con, a se demander dans qu’est faut taper
+         alors que c’est moi qui l’est consus.
 
+      Je crois que Nex dois, tracker la conversion avec les gens et presenter un plan
+      d’avancement pour ce genre de situation.
+
+      Benefice de cette option est de:
+      • Demander a Nex de nous rappeller notre discusion anterieure
+      • De nous afficher le plan de notre progression et les actions prochaine
+      • Au depart de la conversion, ou a tout moment de la conversion, il serais formidable
+      d’avoir un truck juste a cote visible par l’user qui affiche les propositions de question
+      et ces questions sont souvent personnaliser avec les discusion precedent avec le bot.
+
+      Je crois que tout ca vient du fait que je voudrais pas avoir a faire a un chatbot
+      Je veux une autre maniere de communiquer avec Nex, le reduire a juste un chatbot serais
+      injuste et un gachis vraiment.
+
+                                     * * *
