@@ -1,17 +1,5 @@
 bot_todo
 
-To get started enter a title for your note above. When you’re ready to save
-your note just use Vim’s :write or :update commands, a filename will be picked
-automatically based on the title.
-
-                                    * * *
-
-The notes plug-in comes with self hosting documentation. To jump to these notes
-position your cursor on the highlighted name and press ‘gf’ in normal mode:
-
- • Note taking syntax
- • Note taking commands
-
  ✅  DONE
  🏃 :IN_PROGRESS
  ████▁▁▁▁ 50% :IN_PROGRESS
@@ -19,7 +7,7 @@ position your cursor on the highlighted name and press ‘gf’ in normal mode:
                                      * * *
 
 # DEVELOPPEMENT:
-   SPRINT-4: 
+   SPRINT-4:
    1: DEBUT-FIN se calcule avec la suite de fibonacci:  0, 1, 2, 3, 5, 8, 13, 21, 34, ...
 
    | NUM | DATE DEBUT —— DATE FIN                                             |   NBRE DAYS | STATE | STORY BUG |
@@ -167,10 +155,10 @@ position your cursor on the highlighted name and press ‘gf’ in normal mode:
    avec les gigabits d’information qui existe vous et moi, savions plus ou maî-
    tre la tête.
    Mon but est s’incerement de vous orientez vers l’essentiels le concrèt, qui
-   fait vous fait réaliser des prodige là maintenant. vous apprendre ce que 
+   fait vous fait réaliser des prodige là maintenant. vous apprendre ce que
    Steve a apris auprès de son mentor ...(Biographie de Steve Jobs)...== Un liv-
    vre est jugé par sa couverture et un produit, ce qui vos les superbe produit,
-   d’apple. 
+   d’apple.
 
                                      * * *
 
@@ -220,7 +208,7 @@ position your cursor on the highlighted name and press ‘gf’ in normal mode:
    |--------------------------------------------------------------------------------------------+------------+---------------------------------|
    | Faire le control de la Page du Bot sur Facebook pour le respect des règles                 | ...        | Mon 29 Mar 2021 09:56:28 AM +01 |
    |--------------------------------------------------------------------------------------------+------------+---------------------------------|
-   
+
 
 
 #WARNING/ERROR:
@@ -235,8 +223,8 @@ position your cursor on the highlighted name and press ‘gf’ in normal mode:
    depend du chemin local
 
    Error: _RESOLVED
-   La conversion du livre en format EPUB au format JSON ne fonction- 
-   nent pas sur tout les livres. Il y’a le content d’un chapitre  
+   La conversion du livre en format EPUB au format JSON ne fonction-
+   nent pas sur tout les livres. Il y’a le content d’un chapitre
    qui se repette dans plusieurs au- tres chapitre.
 
                                      * * *
@@ -245,11 +233,12 @@ position your cursor on the highlighted name and press ‘gf’ in normal mode:
 # SPRINT-0:
    VISION:
       Voici à quoi consiste ce projet:
-         1> Créer Jady un Model Artificiel Intelligente et Évolutif, qui accompagne les
-            démarreur dans leurs aventures unique de création et développement d’entre-
-            prise et leurs développement personnelles.
-            
-            
+         1> Nous création Jady(Model Mental Artificiel Super Intelligente) est un surdoué
+            du business et des affaires, adaptatiif, évolutif, et tres autonome
+            qui accompagne les démarreurs/Meneurs/Batisseurs dans leurs quêtent unique
+            de création, d’innovations, de développement et d’amelioration personnelles
+            et du monde.
+            NB: JADY comme Jumeau Artificiel De Yattara
 
       Les pourquoi nous faisons ce projet:
          Je me suis rendu compte moi alassane que lors de mes lectures, je cher-
@@ -291,7 +280,7 @@ position your cursor on the highlighted name and press ‘gf’ in normal mode:
       1 creer un entriprise non, plusieurs même au cours de ma vie,
       2 faires des choses qui soient utiles et très bénéfique aux gens,
       3 des choses qui me suivivra même après ma mort
-      Je suis a la recherche des outils, des moyens unique, rapide, et direct 
+      Je suis a la recherche des outils, des moyens unique, rapide, et direct
       d’atteindre mes objectif. je crois que l’information peut faire la dif-
       ference dans mon parcour, mais ils y’ a telma que je suis perdu et frustrer.
       Je lis beaucoup, au minimum 1heur/jour chaque jours, pour comprendre la vie
@@ -300,8 +289,8 @@ position your cursor on the highlighted name and press ‘gf’ in normal mode:
 
       :MON_GROS_PROBLEME est la masse d’informations de livre, de video et audio
       qui existe sur comment faire ce qu’il faut qu’on y perde la tête, il y’a
-      qui sont super, d’autre evident, mais d’autre complement loufoque. 
-      Avec tout ça on est confus, perdu, et faite du surplace. 
+      qui sont super, d’autre evident, mais d’autre complement loufoque.
+      Avec tout ça on est confus, perdu, et faite du surplace.
 
       :JE_VEUX
       Je voudrais avoir un coach, qui sais ou je suis et ce que je cherche a atteindre
@@ -327,8 +316,8 @@ position your cursor on the highlighted name and press ‘gf’ in normal mode:
 
 
 // ##################  ARCHIVES SPRINTS: L’archive des sprints réalisés ###################
-   
-#ARCHIVE SPRINT-1: 
+
+#ARCHIVE SPRINT-1:
    1: DEBUT-FIN se calcule avec la suite de fibonacci:  0, 1, 2, 3, 5, 8, 13, 21, 34, ...
 
    | NUM | DATE DEBUT —— DATE FIN                                                   |   NBRE DAYS | STATE        |
@@ -491,10 +480,10 @@ position your cursor on the highlighted name and press ‘gf’ in normal mode:
    |-----+------------------------------------------------------------------------------+-------------+-------+-----------------------------------|
 
 
-# Archive sprint-3: 
-   → Ordonner cet backlog du plus important ou urgent au plus farfelu: 30 Munite 
+# Archive sprint-3:
+   → Ordonner cet backlog du plus important ou urgent au plus farfelu: 30 Munite
 
-# Archive sprint-4: 
+# Archive sprint-4:
    1: DEBUT-FIN se calcule avec la suite de fibonacci:  0, 1, 2, 3, 5, 8, 13, 21, 34, ...
 
    | NUM | DATE DEBUT —— DATE FIN                                        |   NBRE DAYS | STATE | STORY BUG |

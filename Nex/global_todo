@@ -24,16 +24,22 @@ position your cursor on the highlighted name and press ‘gf’ in normal mode:
       Les pourquoi nous faisons ce projet:
          1> In bot_todo
          2> In botweb_todo
+
       En quoi ce projet est-il important:
          1> In bot_todo
          2> In botweb_todo
+
+      Notre mission au quotidient:
+         Nous developpons un surdoué des affaires.
+         Alimenter par l’IA(Intelligence Artificiel)
+         dont la mission est d’accompagner
 
    UTILISATEUR:
       Je suis alassane, je suis dans la vingtaine, j’ambitionne de:
       1 creer un entriprise non, plusieurs même au cours de ma vie,
       2 faires des choses qui soient utiles et très bénéfique aux gens,
       3 des choses qui me suivivra même après ma mort
-      Je suis a la recherche des outils, des moyens unique, rapide, et direct 
+      Je suis a la recherche des outils, des moyens unique, rapide, et direct
       d’atteindre mes objectif. je crois que l’information peut faire la dif-
       ference dans mon parcour, mais ils y’ a telma que je suis perdu et frustrer.
       Je lis beaucoup, au minimum 1heur/jour chaque jours, pour comprendre la vie
@@ -42,8 +48,8 @@ position your cursor on the highlighted name and press ‘gf’ in normal mode:
 
       :MON_GROS_PROBLEME est la masse d’informations de livre, de video et audio
       qui existe sur comment faire ce qu’il faut qu’on y perde la tête, il y’a
-      qui sont super, d’autre evident, mais d’autre complement loufoque. 
-      Avec tout ça on est confus, perdu, et faite du surplace. 
+      qui sont super, d’autre evident, mais d’autre complement loufoque.
+      Avec tout ça on est confus, perdu, et faite du surplace.
 
       :JE_VEUX
       Je voudrais avoir un coach, qui sais ou je suis et ce que je cherche a atteindre
@@ -65,7 +71,7 @@ position your cursor on the highlighted name and press ‘gf’ in normal mode:
       • Creer une communaute autour du produit
 
    Qu’est ce qui est plus important developper une site web pour informer les gens
-   et laisser reprendre la nouvelle pour et ceci me donne une idee du potentiel 
+   et laisser reprendre la nouvelle pour et ceci me donne une idee du potentiel
    autour de mon idee meme convaincre les gens de me joindre et me supporter.
 
    Developper un site web sur django ou un site gitweb:
@@ -81,5 +87,4 @@ position your cursor on the highlighted name and press ‘gf’ in normal mode:
   Conclusion:
   1→ Je developpe le site très rapidement sur github
   2→ Je witch sur django quand le flux du site sera plus forte et demande plus de
-  fonctionnalite en integrant juste les template avec l’application django. 
-   
+  fonctionnalite en integrant juste les template avec l’application django.

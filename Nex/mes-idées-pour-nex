@@ -94,6 +94,9 @@ mes-idées-pour-nex
          • Les 3livres a implementer au depart
          • Creer suffisament de story
 
+   Nex est un moyen important mais pas essentiel, plus que tout autre moyen, c’est un moyen dont tu
+   est d’arriver ou d’avoir ce que tu veux et plus rapidement, mais pas comme tu l’imagine mais plus
+   ou tu veux plus rapidement.
 
 # NOTE DE REFLEXIONS #1
    La seul objectifs actuel est de sortir quelque chose qui fonctionne avec une ou
@@ -131,7 +134,8 @@ mes-idées-pour-nex
       • Avec le fil de dicsution avec Nex, ceci est une mainere de mesurer le retour
          des gens.
 
-# NOTE: Je me rend compte que des fois, meme tres souvent qu’on ne sais pas quel question
+   NOTE: Bien avant Tue 27 Apr 2021 09:50:23 AM +00
+         Je me rend compte que des fois, meme tres souvent qu’on ne sais pas quel question
          au chatbot, on est la, assis comme un con, a se demander dans qu’est faut taper
          alors que c’est moi qui l’est consus.
 
@@ -148,5 +152,34 @@ mes-idées-pour-nex
       Je crois que tout ca vient du fait que je voudrais pas avoir a faire a un chatbot
       Je veux une autre maniere de communiquer avec Nex, le reduire a juste un chatbot serais
       injuste et un gachis vraiment.
+
+      Tue 27 Apr 2021 09:50:57 AM +00
+      Idees possibles: Toujours dans la construction de l’intelligence
+      Comme noté plus haut j’ai saisi que les gens meme moi, j’ai du mal a savoir
+      quel question je vais lui poser, si je reflechis a qu’est ce que je vais lui
+      demander le jeu est deja finis je trouve
+
+      Idee 1: :Fait Bien demarrer la discution avec l’utilisateur,
+         Un plus sera de savoir d’entre de jeu si l’utilisateur est nouveau ou pas
+         Ou un moyen subtils et direct de lui montrer les possibilite de Nex
+      Idee 2: :Fait Commet debuté juste au dessus faire savoir d’entre de jeu ce que Nex peut
+      accomplir pour la personne pas besoin d’explication juste une phrase Nex qui explique
+      clairement sa focntion et affiche la liste des sujets qu’il peut aborder avec l’utilisateur.
+      Sur l’application web nous pouvons afficher la liste des themes de discusion possible avex Nex.
+
+
+      Idee 3: :Fait  Est de trouver comment continuer la discusion avec un User sur un theme sur tout les chatbot
+      que j’ai utiliser, c’est une question reponse dont des fois la question precedente n’a rien a voir avec
+      le present, tout les intelligence ressemble a un mini-google
+
+      l’assistant doit comprendre ‘les tu sais quoi ?’
+
+      :Fait Maintenant qu’est ce qui est vraiment important accomplir, je crois que ce sont
+      les stories c-a-d ecrire a la main bic et stylo, les stories qui met en evidence
+      l’implementation de l’idee 1,2 et 3 et,
+
+      :PasFAIT Et l’amelioration possible des autres intents
+      deja developper. Tout abord en developpant un possibilité de mettre a disposition
+      des testeurs au plus vite les developpements valider.
 
                                      * * *

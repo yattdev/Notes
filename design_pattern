@@ -1,0 +1,11 @@
+design_pattern
+
+Le design pattern se divise en 3partie
+   1 → Le pattern de creation
+         ▸ Qui decris les models de creation des objets
+   2 → Le pattern de structure
+         ▸ Qui decris les models d’organisation des classes
+   3 → Le pattern de comportement
+         ▸ Qui decris les models d’interaction des objets
+
+Continuer le cours de design pattern pour ecrire duu code maintenanble en java
