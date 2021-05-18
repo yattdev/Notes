@@ -178,8 +178,19 @@ mes-idées-pour-nex
       les stories c-a-d ecrire a la main bic et stylo, les stories qui met en evidence
       l’implementation de l’idee 1,2 et 3 et,
 
-      :PasFAIT Et l’amelioration possible des autres intents
+      :Fait Et l’amelioration possible des autres intents
       deja developper. Tout abord en developpant un possibilité de mettre a disposition
       des testeurs au plus vite les developpements valider.
+
+      ————————————————————————————————————————————————————————————————————————————————-
+      Comment integre les intents des livre dans Jady.
+
+      J’ai plusieurs possibilte:
+      1 → Regroupe les models par domaine par exples:
+         → Developpement personnelle
+            Dans le models de developpement personnelle
+         → Business
+         → Fiction
+         → etc...
 
                                      * * *
