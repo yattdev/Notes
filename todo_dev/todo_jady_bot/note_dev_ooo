@@ -1,0 +1,50 @@
+note_dev_ooo
+
+1 Spliter tout les chapitres de livres en fichiers : OK
+2 Deplacer ces chapitres ci dans les themes definis: OK
+   → Ensuite creer un dossier INTENT(Le nom du chapitre) pour chaque intent et
+   regrouper les chapitres qui ont le même intent.
+
+3 Ameliorer la class indexation, pour indexer les
+  chapitres avec le nom de l’intention commun: OK
+
+4 Debuter l’implementation des intents: OK
+   NOTE:
+      J’ai developper un moyen d’indexer recursivement les chapitres: Ok
+      Chaque utterance fichier.txt dans themes/french/personnel/***/*.txt peut etre
+      considere comme un dossier dans le themes/french/personnel des books.
+      Par exmple: On peut creer un dossier ‘les croyances limilantes’ dans le dos-
+      sier ‘Les croyances’ par ce qu’on a un fichier ‘les croyances limilantes.txt’
+      comme utterance.
+
+5 Entrainer et Tester Jady sur les utterances implementer
+   1 → Definis les nouveaux intents dans le fichier domaine.yml et leurs reponses
+      avec l’action action_answer_question.
+      • Insertion dans domaine.yml: OK
+      • Insertion dans response.yml: OK
+         Note: pas necessaire car les reponses des nouvelles
+               intents proviennent tous de l’action action_answer_question
+
+   2 → Definis leurs rules: Intent→ Action: OK
+
+   3 → Entrainer Jady sur les nouvelles modifications
+      • Spliter les nouvelles données afin de generer de nouvelles donnée d’entrainement: OK
+      • Alors maintenant commnecer l’entrainement: en cours...
+         TODO : Changer le nom des intents et les renommer comme le nom de leurs dossier parent:
+   4 → Tester et corriger ca fiabilité: en cours...
+      • spliter les nouveaux livres ajouter et les indexé
+      • ajouter les chapitres des nouveaux livres dans le themes
+      • creer les intents nouveaux chapitres ajouter et des anciens manquants.
+      • mettre a jour les reponses de Jady.
+      • Tester aussi le l’evenement utter_reaching_out_to_user se produit s’il
+      plus 2intents (scope_not_handle et out_the_scope).
+      —————————————
+      1 → Definir le contenu utter_action_answer dans reponses.yml pour les custom action
+      implementer cette utter_action_answer dans actions.py, et ...
+      (Avec plusieurs dispatcher et un temps d’attent entre les reponses: https://forum.rasa.com/t/split-utterances-templates-into-multiple-answers/1204/2)
+         • Ajouter le buttons dans le contenu de utter_action_answer
+         • Ajouter les markdown dans le contenu de utter_action_answer
+         • Ajouter les image dans le contenu de utter_action_answer
+
+      2 → Implementer le reaching-out to the user avec le rules: start-conversation == true
+         pour directement envoyer un msg a user des le depart de la conversation.

@@ -1,0 +1,11 @@
+react_learng_note
+
+   WHY React ?
+      1 Pour sa rapidité: React un utilise un DOM virtuel, et c’est ce qui fait
+         sa rapidité.
+      2 La re-utilisation des components
+      3 Maintenu par facebook
+      4 Employabilité
+
+   JSX RULES
+   Nested Components, React Tools

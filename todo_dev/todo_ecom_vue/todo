@@ -1,0 +1,24 @@
+todo
+
+Vue:
+    afficher la listes des categorie et leurs enfants: DONE
+    afficher la liste des produits d'un categorie lorsqu'on click sur: TODO
+      actions:
+         Faire une boucle sur la liste des categories DONE
+            Appeler le component
+               Passer au component la categorie props[’categorieProduits’]
+               Affiche la liste des produits DONE
+               Mettre a jour la liste des produits lorsqu’on click sur une categorie DONE
+
+    Afficher la list des arborescence des categorie sur bar: DONE
+    — Feature: Ajouter le chemin vers la categorie selectionner sur la page categories —
+
+    Pagination des produits sur la page categorie details: DONE
+    — Feature: Update pagination component to use it in other file.
+    Pagination des produits sur la page home(la liste des produits): DONE AFTER
+    Continuer avec la videos Django Vuejs: DONE AFTER
+
+    — Feature: Nothing happen when click on categorie nav button while inside categorie page
+    fixe this: create a watcher inside categorie component
+
+    Le lien sous le nom des produits
