@@ -113,8 +113,80 @@ pourquoi_jady
 
    J’ai aussi les themes a implementer dans Jady, donc
    :PROCHAINE_ACTIONS
-   1 →  Doit effectuer une re-selections des livres avec les changements que je
+   1 →  Doit effectuer une re-selections des livres pour les changements que je
    viens de faire pour le type d’entrepreneur.
    2 →  Continuer dans la recherche des question et l’implementation dans Jady,
    les themes choix
-      • Choisir les questions ne tenant compte du type d’entrepreneur definis.
+      • Choisir les questions ne tenant compte que du type d’entrepreneur definis.
+
+   ———————————————————————————————————————————————————————————————————————————————————
+   COMMENT JE VAIS ME DEBROUILLER POUR ASSOCIER LES QUESTIONS AUX REPONSES ??????????
+   ———————————————————————————————————————————————————————————————————————————————————
+   Lorque j‘aurai determiner les qsn pour un intents definis,
+   Epuisque le but est de faire correspondre l’intent au chapitre, j’ai plusieurs options:
+   1 - Vu que j’ai deja developper un moteur de recherches qui peut faire de recherches selon
+   un attribut determiner, c-a-d je vais mettre l’attribut context de chapiter l’intention qui
+   correspond a elle.
+   MAIS COMMENT FAIRE CA DYNAMIQUEMENT, C-A-D PAR L’ORDINATEUR ?
+   Pour faire ca ! L’ordinateur doit etre capable de reconnaire dans quel intents
+   un chapitre se situe, pour lui assigner ca dans sont context et voila.
+
+   Par exples: Si l’ordinateur peut determiner dans quel intent doit se situe le chapitreA
+   , disons l’intention: La responsabilité personnel; le context du chapitreA = La responsabilite
+   personnel, du coup, quand un user, faite une intention, et que le NLU point ca vers la responsabilite
+   personnel, directement on fait appel a ce chapitreA.
+
+   :PROBLEME le nom ne donne pas la possibilite de determiner les intentions qui y son associer, ce qui
+   me pousse a faire le tour un a un de chaque chapitre pour le classer, au moins je crois que se sera
+   plus rapide, car j’ai juste a savoir de quoi l’auteur veux aborder dans ce chapitre
+   Si seulement j’avais une IA qui fait ce travail pour moi.
+   —————————————— FAIRE LE JOB DYNAMIQUEMENT PAR L’ORDINATEURIl ——————————————
+   il y’a une solution dans les livres j‘ai telechargé, dans le dossier:
+   ~/Téléchargements/nlu/
+
+   Thu 03 Jun 2021 09:50:47 PM +01
+   Combien de temps me prendra pour implementer definir les qsn d’un seul themes et l’implementer les
+   livre correspondantes:
+   :TEMPS =
+
+   Fri 11 Jun 2021 07:49:21 PM +01
+   ——————————————————————————————————————————————————————————————————————————————
+   J’etais dans une impasse ou je me demandais comment l’outils que je suis la developper
+   allais m’aider, oui comment puisque je suis aussi un entrepreneur qui cherche a reussir
+   et a faire bcp d’argent comment cette outil sensé qider les entrepreneurs allais resoudre
+   mon probleme qui est:
+   Actuellement je veux pas apprendre de nouveau truck, en faite, c’est pas totalement ca, juste
+   je ne pense pas que les reponses de jady pourrais m’aider car j‘avais l’impresion que tout
+   les informations que j‘ai jady pourraias me fournir allais ressemble au deja vue.
+
+   Pendant ce temps j’ai eu cette revelation qui me dis que Jady est un outils consus pour
+   accompagner les guys dans leurs aventure entrepreneurial, et que dans ce parcour, il y’a
+   plusieur niveau, oui plusieurs niveau dont moi meme je suis passer qui.
+   Niveau 1: La recherche et le developpement de soi !
+      Dans cette niveau nous cherchons des reponses sur la vie, nous cherchons a savoir ce
+      qui compte pour nous, l’essentiel dans la vie le sens et le pourquoi de l’univer, nous
+      crée des valeurs et une personnalité.
+      Dans cette phase les livres, les medais, les recommandations sont necessaires pour aider
+      l’utilisateur dans ca recherche de solution.
+
+   Niveau 2: La recherche et le developpement pour changer le monde.
+      Dans cette niveau nous somme dans la recherche de creation de valeur, changer le
+      monde laisser une impact, notre trace dans l’histoire.
+
+      dans cette phase nous somme la recherche pour creer de la valeur pour le monde,
+      les livres sur l’entrepreneuriat comme L’AUTO-ROUTE DU MILLIONAIRE, LEAN START-UP
+      sont des bon exples ou tout les ressources utils qui pourrais nous orienter.
+
+
+   Jady a la rescouse !
+   L’objectif principale de Jady est etre un guide pour les gens afin d’eviter de se fourvoiyer
+   dans les chemins bidon en apportant sa propre philosophie de vie et de reussite sur le Niv1
+   et le Niv2.
+
+   C’est une Intelligence creer pour etre un le boussole des pirates(entrepreneuriat) sur la
+   ou mers ou les guerries dans la jungle de l’entreprenueriat.
+
+      Dans tout sa je vais mettre en place un plan une sorte de structure.
+      Les livres proposes deja des structures mis en place avec des etapes
+      je pourrais me servir de cette structure pour elaborer les chemins de
+      question et reponse pour chaque themes.

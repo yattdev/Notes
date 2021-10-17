@@ -25,26 +25,49 @@ PIVOTER: (temps d’experimentation) 2semaines.
    • Changer complement de segment clients/domaine
    • La fonction du Produit
 
+=============================== STAR =========================================
+
+   • Comment faut-il developper un prototype pour tester les hypotheses
+      1 Techniquement ?
+      2 Manuellement ?
+      3 Design ...: Juste fictive pour voir le trafic ?
+
+   Qu’est ce que je cherche avec ce prototype ? la reponse definir donne la reponse de la
+   question au dessus.
+      • Le protytpe doit etre testable capable de repondre aux user au minimum de 2 themes
+      • Prêt avant le 15juin
+   Le choix est claire c’est techniquement que le protytpe sera developper.
+
+Definir les experimentations a tester:
+   Les hypotheses que je mentionnent sont en faite des experimentation pour decouvrir
+   ce qui fonctionnent et ne fonctionne pas.
+—————————————————————————————————————————————————————————————————————————————
 DES EXPERIMENTATIONS:
    Hypothese de proposition de valeur:
       NB: Demander n’est pas une solution
-      → Combien de clients paye pour aller plus lions. (experiementer et pivoter)
-      :Estimes →
-      :Reel    →
+      → La taille du marcher ou combien de personne sont potentielement interesser par l’idée.
+      Apres tout recherche on a. voir details_estimations
+      :Estimes →  9 138 600
+      :Reel    →  ?
       → Combien d’entre eux revient sur l’application (pivoter)
-      :Estimes →
+      :Estimes → 5% * 9 138 600 = 456 930
       :Reel    →
+      → Combien de clients paye pour aller plus lions. (experiementer et pivoter)
+      :Estimes → 3% * 9 138 600 = 274 158, avec 6,99£ on a: 274 158 * 6,99 = 1.916.364,42£/mois
+      :Reel    → ?
       → Combien de temps un user passe t-il sur le site ou Jady. (pivoter)
-      :Estimes →
-      :Reel    →
-      → Qu’est ce qui les interesses le plus dans l’application. (experimentation)
-      :Estimes →
+      :Estimes → 15 munites +/- 5munite.
       :Reel    →
       → Combien de question moyen les clients pose a Jady (experimentation)
-      :Estimes →
+      :Estimes → 20 questions +/- 5
       :Reel    →
+      → Qu’est ce qui les interesses le plus dans l’application. (experimentation)
+      Intérêt:
+
+
 
    Hypothese de croissance: ?
+   ———————— Parcourir les livre pour le marketing des startups ———————
    Comment les nouveaux clients decouvre Jady
    → Une fois l’application terminer comment va t-il se propager entre les utilisateur
       • La meilleur chance pour nous est qu’il soit viral, alors on se concentrer sur
@@ -61,6 +84,36 @@ DEUX GRANDES QSN:
 
 ===> COMBIEN D’HYPOTHESES AVONS A TESTER ACTUELLEMENT ? <===
    Jady un entrepreneur surdoué: un coach
+   H1: Tout personne achete des livre de d’auto-develeppement personnel ou prefessionnel
+   cherche l’amelioration et la croissance, et toute personne qui cherche la croissance
+   voudrais avoir un moyen de
+   0→ De se fixer un but atteindre
+      On se fixe a pas un but n’importement comment ! C’est la qu’intervient notre Hero
+      je le nomme Jady !
+      Trouve quelque chose, experiment, Si valider, fait comme personne ne la fait avant.
+      → Demande Juste a Jady comment se fixer des but ?
+         Il ne s’agit pas simplement de repondre avec un feuille ou une page que quelqu’un
+         a rediger. Non c’est pas ca, Alexa, Google assistant peut faire, il est sensé etre
+         intelligent. Donc votre avis c’est comment va t-il repondre.
+         Il deux possibilité ? il te connais oui/non ?
+         En supposant que je suis etudiant, et le Jady le sais, il connais des propos
+         de ce qu’un etudiant peut accomplir, précisement d’ou il demarre et quel sont
+         habituelement nos plus grande craintes, et force et/ou avantages.
+         En fonctions de tout ces parametres te propose des reponses sous forme
+         d’experimentations.
+   1→ D’avoir un plan d’action ou un cheminement vers ce qu’il voudrais atteindre
+   avec des actions a entreprendre pour arriver a cet but.
+      (Plan en fonction du but et du status de la personne)
+      Dans ce plan on trouve:
+      • Les actions pratiques
+      • Les prochaines actions dans chque etape
+      • Des ressources propre a ton parcours (Livre, audio, histoire et inspiration)
+         ▹ Les obstacles/piege recurrents a eviter (Comme des limitation personnel)
+         ▹ Des voies insoupsonné a entreprendre et qui est été déjà entrepris par d’autre.
+         ▹ Tout une batterie de qsn reponses
+   2→ Mesurer sa croissance a temps reel.
+   3→
+   4→ De savoir sur quoi
       1→ chaques qsn est un theme a aborter par exple:
          Theme: Comme etre plus productif dans le quotiens
             Quand l’utilisateur clique sur le theme il y’a une introduction qui es fait par
@@ -69,9 +122,7 @@ DEUX GRANDES QSN:
          et directe.
          C’est la reponses a ces questions qui sont tirer des livres et d’autre de Jady
 
-      2→ L’utilisateur peut lui poser n’importe quel questions, que Jady repond et s’il y’a en
-      il propose a l’utilisateur un theme similaire a cette questions avec les sous questions de
-      cette theme.
+
 
 ===> COMBIEN DE MARCHE DE MANOEUVRE AVONS NOUS ? <===
    • c-a-d combien de pivot somme nous capable d’effecture avant de faire
