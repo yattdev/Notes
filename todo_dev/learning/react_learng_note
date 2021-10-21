@@ -9,3 +9,18 @@ react_learng_note
 
    JSX RULES
    Nested Components, React Tools
+   Hosted React:
+      Command to build for production: npm run build
+      Hosted on Netify.com:
+         With github: CI
+         Or drag and drop: build directorie
+
+   ADVANCED REACT:
+   useState
+   useEffect
+   conditionnal Rendering
+   Forms
+   useRef
+   useReduce
+   Prop drilling
+   Context API / useContext
