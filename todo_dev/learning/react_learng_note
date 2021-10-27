@@ -16,11 +16,27 @@ react_learng_note
          Or drag and drop: build directorie
 
    ADVANCED REACT:
-   useState
-   useEffect
-   conditionnal Rendering
+   useState: (array, object)
+         project: birthday (useState, destructure object)
+   useEffect: (simple, clean-up, fetch-data)
+   conditionnal Rendering (row-operator(||, &&) and ternaire(?), multi-render, hidden)
+      projects:
+         Tours
+            • Send function from parent to child
+            • fecth data with axios, manage error,
+            • Row and Ternaire operator
+            • List item, and detail item (item === tour)
+            • Read more button,
+            • filter object array
+         Review
+            • Install(npm i react-icons —save) and using: site react-icons
+            • Faire passer la liste des personnes en cliquant le btn(next, prev, surprise-me)
+         Menu/Manuelle/dynamique
+            • Comment filtre la liste des items kan on click le categorie
+            • Ajouter manuellement et dynamiquement les btn des categories
    Forms
    useRef
    useReduce
    Prop drilling
    Context API / useContext
+      (send function from parent to child like props)
