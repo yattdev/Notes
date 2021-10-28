@@ -34,6 +34,9 @@ react_learng_note
          Menu/Manuelle/dynamique
             • Comment filtre la liste des items kan on click le categorie
             • Ajouter manuellement et dynamiquement les btn des categories
+         Slider
+            • Ne pas oublier de verifier s’il faut cleaner l’event a chque fois que tu utilise useEffect
+            •
    Forms
    useRef
    useReduce
