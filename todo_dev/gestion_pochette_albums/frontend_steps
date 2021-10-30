@@ -1,0 +1,16 @@
+frontend_steps
+
+• Install Vue-cli
+• Create frontend project: vue create frontend
+   ◦ Select Manually steps
+   ◦ typescript
+   ◦ define other optimal config
+• Install axios vue-axios bootstrap bootstrap-vue
+• Implement followings config to main.ts
+   ◦ import axios, define default base url and Add to vue
+   ◦ import bootstrapvue, IconPlugin and Add both to vue
+   ◦ import bootstrap css bootstrapvue-css
+   ◦ ADD to app vue before render
+      ◦ import router and Add
+      ◦ import store and Add
+• Star to implement component and views

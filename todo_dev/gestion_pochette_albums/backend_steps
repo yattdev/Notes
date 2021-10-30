@@ -1,0 +1,72 @@
+backend_steps
+
+• Create directory backend/
+• Create env with pipenv(pipenv shell —python version)
+• Install django djoser djangorestframework_simplejwt djangorestframework
+   markdown django-filter
+• Create project with (django-admin startproject backend .)
+• Add (rest_framework, djoser) to settings.INSTALLED_APPS
+• Create app (django-admin startapp api)
+• Add api to settings.INSTALLED_APPS
+• Ovveride default user (define it inside settings)
+   ◦ Override UserManager
+   ◦ Override AbstractUser
+   ◦ Point default user to CustomUser inside settings
+   ◦ Add models to admin
+   ◦ Test models
+      ◦ Create tests dir
+      ◦ add __init__.py
+• Make first makemigration et migrate
+• STAR DOCKER CONTAINER FOR PRODUCTION READY APPLICATION
+   ◦ describe docker steps here ! (docker-compose, docker-file etc...)
+• add rest_framework config to settings
+   ◦ Disable browsable api in production mode
+• add djoser config to settings
+• add simple_jwt config to settings
+• create user serializers by override djoser UserSerializers and UserCreateSerializers
+• add static and media config to settings
+   ◦ Add enable static and media inside root/urls.py
+• CREATE AND IMPLEMENT APP for API and normal.
+   ◦ create app with django-admin
+   ◦ create models
+   ◦ add models to admin
+   ◦ test models
+      ◦ For img install pillow
+      ◦ for Autoslug install django-autoslug
+      ◦ add DEFAULT_AUTO_FIELD=’django.db.models.AutoField’ to settings
+   ◦ FOR API
+      ◦ create urls
+      ◦ create serializers (on serializers les models,
+             definis les fields a serialiser,
+             aussi de methode avec serializers.SerializerMethodField)
+      ◦ create views for serializers (on definie les permissions
+            avec permission_classes(permissions.type))
+         ▸ Tester serializers too
+      ◦ Go from (views, urls) to (viewset, router)
+   ◦ FOR TEMPLATING
+      ◦ create urls
+      ◦ create views for serializers
+
+
+Add documentation to endpoints:
+   • Install pyyaml uritemplate drf-yasg
+   • add drf_yasg to INSTALLED_APPS
+   • Add followings config to root/urls.py
+      ◦ from rest_framework import permissions
+      ◦ from drf_yasg.views import get_schema_view
+      ◦ from drf_yasg import openapi
+      schema_view = get_schema_view( # new
+            openapi.Info(
+               title=”Blog API”,
+               default_version=”v1”,
+               description=”A sample API for learning DRF”,
+               terms_of_service=”https://www.google.com/policies/terms/”,
+               contact=openapi.Contact(email=”hello@example.com”),
+               license=openapi.License(name=”BSD License”),
+               ),
+            public=True,
+            permission_classes=(permissions.AllowAny,),
+            )
+      • Add followings to urlpatterns
+      path(‘swagger/’, schema_view.with_ui( # new
+               ‘swagger’, cache_timeout=0), name=’schema-swagger-ui’),
