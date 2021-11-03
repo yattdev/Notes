@@ -14,3 +14,16 @@ frontend_steps
       ◦ import router and Add
       ◦ import store and Add
 • Star to implement component and views
+• delete unecessaire HTML from App.vue: OK
+• change Produits Vue data structure for pochette album:  OK
+• change axios url to get pochette list: OK
+• test connexions and inscription
+• update router index.js
+• update store index.js
+• delete unecessaire vue and components
+
+
+———————
+• Button
+   ◦ Supprimer album modal confirmation
+   ◦ Update Album
