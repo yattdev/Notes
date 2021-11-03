@@ -70,3 +70,25 @@ Add documentation to endpoints:
       • Add followings to urlpatterns
       path(‘swagger/’, schema_view.with_ui( # new
                ‘swagger’, cache_timeout=0), name=’schema-swagger-ui’),
+
+TODO: Define steps to deploy django to heroku
+      BETTER: Make video and post in french
+
+DATABASE POSTGRESQL CONFIG:
+==========================
+Use pgloader to switch from db.slite3 to postgresql
+==========================
+$ createdb —help (Help to create db inside prompt)
+——————-
+postgres=# CREATE DATABASE album_pochette WITH ENCODING 'UTF8';
+CREATE DATABASE
+postgres=# ALTER DATABASE album_pochette OWNER TO alassane;
+ALTER DATABASE
+postgres=# GRANT ALL PRIVILEGES ON DATABASE album_pochette TO alassane;
+———
+DROP DATABASE IF EXISTS
+———
+
+
+IMAGE UTILS:
+   https://via.placeholder.com/550x350
