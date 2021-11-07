@@ -79,6 +79,8 @@ DATABASE POSTGRESQL CONFIG:
 Use pgloader to switch from db.slite3 to postgresql
 ==========================
 $ createdb —help (Help to create db inside prompt)
+==========================
+$ createuser —help (Help to create user inside prompt)
 ——————-
 postgres=# CREATE DATABASE album_pochette WITH ENCODING 'UTF8';
 CREATE DATABASE
@@ -92,3 +94,4 @@ DROP DATABASE IF EXISTS
 
 IMAGE UTILS:
    https://via.placeholder.com/550x350
+   django-resize: help with ResizeImageField
