@@ -67,4 +67,32 @@ react_learng_note
          On peu donc utiliser useFetch partout ou on veut faire du fetch
       • On peut trouver d’autre custom developper partout sur l’internet tres utiles
 #—————————————————————————————————————ADVANCED REACT—————————————————————————————————————
-   Prop types:
+   Prop types: Pour tester le retour des appelles API, afin de lever une exception lorsqu’il
+   y’a une manque dans nos donner et aussi definir une valeur par defaut.
+   React router:
+      •  Creer des router entre nos components
+      •  On a 2 facon de l’utiliser avec la V6.0 pour le moment parcequ’il change souvent
+         ▸ 1er cas: BrowserRouter as Router >> Switch >> Route(path, element)
+         ▸ 2e  cas: on utilise useRoutes, let routes = useRoutes([ { path: ‘’, element: component}])
+            ▹ Dans ce 2e cas il faut emballer routes dans Router.
+      • ‘React router params’: on accede au parametre de l’url avec ‘useParams’ from react-router-dom
+         ▸ const { id } = useParams(): destructurer les parametres
+      •  On a aussi ‘Link’ from react-router-dom, qui s’utilise de la meme facon dans les 2cas.
+      • Attention avec map, il faut utiliser l’index comme key au lieu de l’id eg: key={index} intead key={id}
+      • Le mot (exact) dans <Routen /> ’existe plus dans la version6, car ils ont ameliorer le systeme de matching
+      • On utilise aussi Switch specifique lorsque nous voulons afficher une page d’ERREUR
+      ————————————————————————————————OPTIMISATION DE L’APP——————————————————————————————————————-
+   React memo: React.memo
+      • Utiliser pour optimiser le rendu des les props
+      • Lorsqu’on utilise, react ne rend plus de re-render avec la liste de items tant qu’il y’a pas eu de changement
+      • On wrap le component qui prend en parametre la props avec: React.memo(component)
+   UseCallback: useCallback
+      • Utiliser pour optimiser le rendu des fonctions
+      •  Lorsqu’on utilise, react ne fait plus de re-render lorsqu’on appelle la fonction tant que le retour de celle-ci n’est pas
+         modifier.
+      • utiliser pour wrapper la fonction passer comme props
+   UseMeno: useMeno
+      • Utiliser pour optimiser les calculs couté en temps et/ou memoire
+      • Lorsqu’on utilise, react n’effectue plus ce calcul tant le retour ne change pas.
+      • On wrap la fontion qui fait le calcul avec useMemo:
+         ▸ const mostExpensive = useMemo(() => fonctionQuiFaitCalculExpensive(param), [param]) dependency est le param
