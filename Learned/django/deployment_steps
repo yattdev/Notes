@@ -1,0 +1,62 @@
+deployment_steps
+
+FOR Paas like heroku:
+| STEPS               | TODO                                                                 | SOME ISSUE/INFO           |
+|---------------------+----------------------------------------------------------------------+---------------------------|
+|                     | Use environment variable with os.environ.get(variable_name)          | ENV=PRODUCTION            |
+| DEBUG               | DEBUG → False                                                        |                           |
+|---------------------+----------------------------------------------------------------------+---------------------------|
+|                     | Use environment variable with os.environ.get(variable_name)          | DEV SECRETE-KEY           |
+| SECRETE-KEY         | GENERATE NEW SECRETE-KEY                                             | SHOULD BE FOR             |
+|                     | “”.join([random.choice(string.printable()) _ for range(45)])         | PRODUCTION                |
+|---------------------+----------------------------------------------------------------------+---------------------------|
+| ALLOWED_HOSTS       | Update ALLOWED_HOSTS in settings for production domain name          |                           |
+|---------------------+----------------------------------------------------------------------+---------------------------|
+| STATICFILES         | Update settings static variables and launch django collectsatic      | Use environment           |
+| variables →         | use path help(location(...) as ex): STATICFILES_DRIS, STATIC_ROOT    | variable                  |
+|                     | STATIC_URL: STATICFILES_DRIS=STATIC_ROOT=location(‘static’)          | ENV=PRODUCTION            |
+| Use Whitenoise      | Install and config whitenoise in settings to serve static files      |                           |
+|---------------------+----------------------------------------------------------------------+---------------------------|
+| MEDIA FILES         | Update settings media variable                                       | Use environment           |
+| Use django-         | Use django-storage with other service=(dropbox, S3, Google etc.)     | variable: root/urls       |
+| storage[service]    | Dropbox work very well: DEFAULT_FILE_STORAGE, DROPBOX_OAUTH2_TOKEN   | and settings ENV=P...     |
+|---------------------+----------------------------------------------------------------------+---------------------------|
+| EXPORT DATABASE     | If necessaire: ./manage.py dumpdata app_name fileName.json           | migrations have to be     |
+| DATABASE PATH       | If heroku database is auto-generate and env databasePath is create   | tracked by git            |
+| Install →           | dj-database-url: ← allow us to use databasePath. update settings     | (...) = (conn_max_age     |
+| import in settings  | by added followings: db_from_env = dj_database_url.config(...)       | =500)                     |
+| dj_database_url     | DATABASE[’default’].update(db_from_env)                              |                           |
+|---------------------+----------------------------------------------------------------------+---------------------------|
+| Install gunicorn    | gunicorn is a wsgi server: wsgi server is interface betw server →    | and framework(ex:django)  |
+| Create Procfile     | It is heroku file and content(web: gunicorn wsgi_dir_name.wsgi)      |                           |
+|---------------------+----------------------------------------------------------------------+---------------------------|
+| Requirements.txt    | $ pip freeze > requirements.txt                                      | Unecessairy if use pipenv |
+|---------------------+----------------------------------------------------------------------+---------------------------|
+| TEST BEFORE PROD    | Lauching test before production, for more confidence                 |                           |
+|---------------------+----------------------------------------------------------------------+---------------------------|
+|                     | FROM HERE APP IS READY FOR PRODUCTION                                |                           |
+|---------------------+----------------------------------------------------------------------+---------------------------|
+| Install             | heroku cli if not: help us to manage our app in commande line        |                           |
+|---------------------+----------------------------------------------------------------------+---------------------------|
+| Create              | Heroku count if not                                                  |                           |
+|---------------------+----------------------------------------------------------------------+---------------------------|
+| GIT                 | Heroku use intensively git and u can deploy projet from github/...   | Can set-up CI/CD          |
+|---------------------+----------------------------------------------------------------------+---------------------------|
+| Create projet on    | $ heroku create our_project_name                                     |                           |
+| —————————————>      | ——————————————————————— Some utils commandes —————————————————————   |                           |
+| ON/OFF maintenance  | $ heroku maintenance=on/off                                          |                           |
+| COMPLETE STOP APP   | $ heroku ps:scale web=0 AND $ ... web=1 to start                     | To display all config     |
+|---------------------+----------------------------------------------------------------------+---------------------------|
+| SET ENV VARIABLE    | $ heroku config:set VARIABLE_NAME=VARIABLE_VALUE                     | $ heroku config           |
+| ENV VARIABLE TO SET | SECRETE-KEY, ENV, DATABASE_USER/PASSWORD, DROPBOX_XXX, other         | sensible/private variable |
+|---------------------+----------------------------------------------------------------------+---------------------------|
+| SEND PROJECT TO →   | heroku: $ git push heroku master/main. We can also use heroku to     | project from github/...   |
+|---------------------+----------------------------------------------------------------------+---------------------------|
+| Lauching migrations | $ heroku run python manage.py makemigration (on all app if u use) →  | custom user in project    |
+|---------------------+----------------------------------------------------------------------+---------------------------|
+| Create superuserper | $ heroku run python manage.py createsuperuser                        |                           |
+|---------------------+----------------------------------------------------------------------+---------------------------|
+| IMPORT DATABASE     | If necessaire: $ heroku run python manage.py loaddata path_data.json |                           |
+|---------------------+----------------------------------------------------------------------+---------------------------|
+|                     | * * * * * HOURA !!! YOUR APPLICATION IS ONLINE * * * * *             |                           |
+|---------------------+----------------------------------------------------------------------+---------------------------|
