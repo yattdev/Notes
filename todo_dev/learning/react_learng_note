@@ -15,10 +15,10 @@ react_learng_note
          With github: CI
          Or drag and drop: build directorie
 
-   ADVANCED REACT:
-   useState: (array, object)
+#—————————————————————————————————————Beginning REACT—————————————————————————————————————
+   UseState: useState (array, object)
          project: birthday (useState, destructure object)
-   useEffect: (simple, clean-up, fetch-data)
+   UseEffect: useEffect (simple, clean-up, fetch-data)
    conditionnal Rendering (row-operator(||, &&) and ternaire(?), multi-render, hidden)
       projects:
          Tours
@@ -37,9 +37,34 @@ react_learng_note
          Slider
             • Ne pas oublier de verifier s’il faut cleaner l’event a chque fois que tu utilise useEffect
             •
-   Forms
-   useRef
-   useReduce
-   Prop drilling
-   Context API / useContext
+   Forms:
+      • On utilise: (onSubmit={handleSubmit}, value, onChange) pour generer les input
+      • Pour les forms avec plusieurs input peu utiliser useState avec un object comme
+      useState({id: , name: , etc})
+   UseRef: useRef
+      • On utilise useRef pour pointer un element du DOM afin d’avoir ces propriétes et les modifier
+      • On utilise: const divContainerRef = useRef() et <div ref={divContainerRef}>
+      • Utiliser dans le cas du Menu Hamburger
+   UseReduce: useReduce
+      • Un peu comme useState, mais donne un controle de comment les donner vont etre modifier
+      • On utlise: const [state, dispatch] = useReducer(reducer, defautState)
+         ▸ reducer est une inline fonction qui prend en parametre (state, action)
+         ▸ defautState: c’est la valeur par defaut de state.
+      • Personnellement je crois je vais l’utiliser dans les cas des formulaire
+         ▸ Pour le update et la creation, car action.type me donne le controle pour ça.
+   Prop drilling:
+      • C’est l’action de faire passer une fonctionnalité d’un parent a un enfant de niveau 2/+
+         a travers d’autre enfant de niveau intermediaire alors qu’il n’en pas besoins.
+      • On utilise useContext pour remedier a ce probleme.
+   Context API / useContext:
+      • Nous permet de partager des fonctionnalités a apartir des components vers les childs sans
+      besoin de passer par d’autre childs intermediaire qui en non pas besoins.
+      • Un peu comme (vuex) dans vuejs
       (send function from parent to child like props)
+   Custom hooks:
+      • On creer notre propre hook, sous forme de components ou utiliser (use) au debut de la fonction
+      • Par exple: useFetch permet de faire le fetch vers l’api juste en lui passant l’url et retour {loading, datafected, error, whatever}
+         On peu donc utiliser useFetch partout ou on veut faire du fetch
+      • On peut trouver d’autre custom developper partout sur l’internet tres utiles
+#—————————————————————————————————————ADVANCED REACT—————————————————————————————————————
+   Prop types:
