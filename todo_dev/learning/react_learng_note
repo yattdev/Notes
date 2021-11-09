@@ -50,7 +50,7 @@ react_learng_note
       • On utlise: const [state, dispatch] = useReducer(reducer, defautState)
          ▸ reducer est une inline fonction qui prend en parametre (state, action)
          ▸ defautState: c’est la valeur par defaut de state.
-      • Personnellement je crois je vais l’utiliser dans les cas des formulaire
+      • Personnellement je crois je vais l’utiliser dans les cas des formulaire, Cart (e.g: object)
          ▸ Pour le update et la creation, car action.type me donne le controle pour ça.
    Prop drilling:
       • C’est l’action de faire passer une fonctionnalité d’un parent a un enfant de niveau 2/+
