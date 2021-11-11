@@ -1,0 +1,21 @@
+backend
+
+| Steps                        | Action                          | info                                     |
+|------------------------------+---------------------------------+------------------------------------------|
+| fork and Clone a django-blog from github                             |                                 |                                          |
+|------------------------------+---------------------------------+------------------------------------------|
+| Create your branch                             |                                 |                                          |
+|------------------------------+---------------------------------+------------------------------------------|
+| Migrer le projet vers docker | Make dockerFile, docker-compose | variable for postgres and                |
+|                              | and venv.env→ .gitignore        | django inside venv.env                   |
+|                              | ————————————————————————————    | A postgres database will be              |
+| Update django settings →     | os.environ.get(variabe_name)    | with user, pass, host and database       |
+|                              | ————————————————————————————    | name inside venv.env indexed by          |
+| connect to docker web and db | $ docker-compose run web bash   | env_file in docker-compose.              |
+| container as bash.           | $ docker-compose run db bash, → | psql -h db -U $username --dbname=$dbname |
+|------------------------------+---------------------------------+------------------------------------------|
+|                              |                                 |                                          |
+|                              |                                 |                                          |
+|                              |                                 |                                          |
+|                              |                                 |                                          |
+|                              |                                 |                                          |
