@@ -1,0 +1,18 @@
+postgres_setup
+
+DATABASE POSTGRESQL CONFIG:
+==========================
+Use pgloader to switch from db.slite3 to postgresql
+==========================
+$ createdb —help (Help to create db inside prompt)
+==========================
+$ createuser —help (Help to create user inside prompt)
+——————-
+postgres=# CREATE DATABASE album_pochette WITH ENCODING 'UTF8';
+CREATE DATABASE
+postgres=# ALTER DATABASE album_pochette OWNER TO alassane;
+ALTER DATABASE
+postgres=# GRANT ALL PRIVILEGES ON DATABASE album_pochette TO alassane;
+———
+DROP DATABASE IF EXISTS
+———
