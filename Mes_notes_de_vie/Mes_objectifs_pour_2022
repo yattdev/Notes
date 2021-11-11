@@ -100,36 +100,60 @@ peu import sa taille ou grandeur(a condition quel positive).
    4 → Je veux @ donner le meilleur de moi même (3-4h a 23h30)
    5 → Je veux @ de faire du zakat chq jour
 
-Buts 1:
+Buts 1: ...
    Actions:
       Trouver un jobs au maroc: @(Carte de sejour)
          • Trouver un contrat de travail
             ▹ Faire le test de Larbi: OK
             ▹ Demander les references pour postuler a Amadou
-            ▹ Terminer le cours de react:
+            ▹ Terminer le cours de react: OK
+        →    ▹ Terminer les projects du cours react: 70%
             ▹ Update mon CV pour mettre mes projects django, react, Vuejs:
-               ▪ Mes projects: Test de Larbi, cgenerator, Ecommerce Aptus, freelancer.ma
+               ▪ Mes projects:
+                  ▫ Test de Larbi
+                     • (PD),
+                     • project DONE
+                  ▫ cgenerator
+                     • (PD),
+                     • project DONE
+                  ▫ Ecommerce Aptus
+                     • (PD),
+                     • project DONE
+                  ▫ freelancer.ma DONE
+                  ▫ Mon blog,
                ▪ Mon blog(Une fois terminer)
-            ▹ Developper mon blog en react django-PRO(docker, rest-api):
+               ▪ Chercher aussi des stages de pre-embauche
+            ▹ Developper mon blog en react django-PRO(docker, rest-api): 2jours temps pliens
                ▪ Utiliser le blog-github et y contibuer
+         • Signer un contrat de travail, aller vers les entreprises.
          • Faire la carte de sejour
-         • S’incrire a la cnss
+         • S’incrire a la cnss: Pas necessaire.
       Trouver un jobs au Mali: @(Formation NEBOSH, offre d’emploi)
-      ——————————————————@(Rentre au Mali)———————————————————————————————
-      Trouver un jobs en france: @(Rentre au Mali)
-      Continuer mes etudes en france: @(Rentre au Mali)
-      Continuer mes etudes au Canada: @(Rentre au Mali)
-Buts 2: Debute une fois but1 realiser.
+      ——————————————————@(Rentre au Mali/Carte de sejour)———————————————————————————————
+      Trouver un jobs en france: @(Rentre au Mali/ Carte de sejour)
+      Continuer mes etudes en france: @(Rentre au Mali/ Carte de sejour)
+      Continuer mes etudes au Canada: @(Rentre au Mali/ Carte de sejour)
+Buts 2: !!!
+      Debute une fois but1 realiser.
         • Developper mon projet qui me sert au quotidient/Bcp de personne.
-Buts 3:
+            ▫ Mon blog,
+            ▫ Chatbot
+Buts 3: ...
+      Je veux @ de vivre ma vie comme une aventure et challenge
    Actions:
       • Visualier mon reve realiser chque soir avant de dormir.
-Buts 4:
+      • Je suis a 100% responsable de mon etat interieure et de la qualité de ma vie.
+Buts 4: ...
    Actions:
       • Planinfier le soir a 22h40 de la veille de chque journée.
-      • Visualier ma objectifs atteints une fois planifier avant de dormir
-      • Garder a l’esprit que l’engagement qui differencie les plus reussite de la masse.
-Buts 5:
+      • Visualier ma objectifs atteints avant de dormir
+      • Garder a l’esprit que:
+         ▸ La responsabilité a 100% de ta vie
+         ▸ Honnêtété
+         ▸ La franche-direct
+         ▸ Engagement
+      Marque la difference entre une vie et un autres.
+Buts 5: ...
    Actions:
       • Donner quand j’achete mon petit dejeuner le matins
       • Donner au fitr ou isha a la mosquée
