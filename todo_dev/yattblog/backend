@@ -1,65 +1,91 @@
 backend
 
-| STATE | Steps                                            | Action                            | info                                     |
-|-------+--------------------------------------------------+-----------------------------------+------------------------------------------|
-| DONE  | fork and Clone a django-bona-blog from github    | git clone                         | Les autres details de l’app              |
-|       |                                                  |                                   | se troube sur bona-blog du meme autheur  |
-|-------+--------------------------------------------------+-----------------------------------+------------------------------------------|
-| DONE  | Migrer le projet vers docker                     | Make dockerFile, docker-compose   | variable for postgres and                |
-|       |                                                  | and venv.env→ .gitignore          | django inside venv.env                   |
-|       |                                                  | ————————————————————————————      | A postgres database will be              |
-| DONE  | Update django settings →                         | os.environ.get(variabe_name)      | with user, pass, host and database       |
-|       |                                                  | ————————————————————————————      | name inside venv.env indexed by          |
-| DONE  | connect to docker web and db                     | $ docker-compose run web bash     | env_file in docker-compose.              |
-|       | container as bash.                               | $ docker-compose run db bash, →   | psql -h db -U $username --dbname=$dbname |
-|-------+--------------------------------------------------+-----------------------------------+------------------------------------------|
-| DONE  | Pointer User du blog vers mon CustomUser         | override djoser UserSerializers   |                                          |
-|       |                                                  | and UserCreateSerializers         |                                          |
-|-------+--------------------------------------------------+-----------------------------------+------------------------------------------|
-| DONE  | JWT authentication, (for frontend)               |                                   |                                          |
-|-------+--------------------------------------------------+-----------------------------------+------------------------------------------|
-| DONE  | Session authentication for (api-docs & admin)    |                                   |                                          |
-|-------+--------------------------------------------------+-----------------------------------+------------------------------------------|
-| DONE  | Implementer le CRUD API sur l’User(JWT, SESSION) | Tester avec open-api-docs         |                                          |
-|-------+--------------------------------------------------+-----------------------------------+------------------------------------------|
-| ?     | Implementer le Read API sur l’article,           | Tester la lecture (list, details) |                                          |
-| DONE  |                                                  | ArticleSerialiser                 |                                          |
-| DONE  |                                                  | ArticleList,DetailsView           |                                          |
-|       |                                                  | ————————————————————————————————— |                                          |
-| ?     | Implementer le Read API sur Categorie            | de l’API et le dashboard          |                                          |
-| DONE  |                                                  | CategorySerialiser                |                                          |
-| DONE  |                                                  | CategoryList,DetailsView          |                                          |
-|       | TODO: Add sub-catergory feature                  | ecom-aptus can help !             |                                          |
-|       |                                                  | ————————————————————————————————— |                                          |
-| ?     | Implementer le Read API sur Author               | de l’API et le dashboard          |                                          |
-| DONE  |                                                  | AuthorSerialiser                  |                                          |
-|-------+--------------------------------------------------+-----------------------------------+------------------------------------------|
-|       | Deployer l’API sur Heroku avec les steps dans →  | deployment_steps(f)               |                                          |
-|-------+--------------------------------------------------+-----------------------------------+------------------------------------------|
-|       |                                                  |                                   |                                          |
-|-------+--------------------------------------------------+-----------------------------------+------------------------------------------|
-|       |                                                  |                                   |                                          |
-|-------+--------------------------------------------------+-----------------------------------+------------------------------------------|
-|       |                                                  |                                   |                                          |
-|-------+--------------------------------------------------+-----------------------------------+------------------------------------------|
-|       |                                                  |                                   |                                          |
-|       |                                                  |                                   |                                          |
-|       |                                                  |                                   |                                          |
-|       |                                                  |                                   |                                          |
-|       |                                                  |                                   |                                          |
-|       |                                                  |                                   |                                          |
-|       |                                                  |                                   |                                          |
-|       |                                                  |                                   |                                          |
-|       |                                                  |                                   |                                          |
-|       |                                                  |                                   |                                          |
-|       |                                                  |                                   |                                          |
-|       |                                                  |                                   |                                          |
-|       |                                                  |                                   |                                          |
-|-------+--------------------------------------------------+-----------------------------------+------------------------------------------|
-|       | Contribuer a Bona-blog                           | Create nom branch, commiter and   |                                          |
-|       |                                                  | faire un pull-requeste            |                                          |
-|-------+--------------------------------------------------+-----------------------------------+------------------------------------------|
-|       |                                                  |                                   |                                          |
-|       |                                                  |                                   |                                          |
-|       |                                                  |                                   |                                          |
-|       |                                                  |                                   |                                          |
+| STATE | Steps                                              | Action                            | info                                       |
+|-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
+| DONE  | fork and Clone a django-bona-blog from github      | git clone                         | Les autres details de l’app                |
+|       |                                                    |                                   | se troube sur bona-blog du meme autheur    |
+|-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
+| DONE  | Migrer le projet vers docker                       | Make dockerFile, docker-compose   | variable for postgres and                  |
+|       |                                                    | and venv.env→ .gitignore          | django inside venv.env                     |
+|       |                                                    | ————————————————————————————      | A postgres database will be                |
+| DONE  | Update django settings →                           | os.environ.get(variabe_name)      | with user, pass, host and database         |
+|       |                                                    | ————————————————————————————      | name inside venv.env indexed by            |
+| DONE  | connect to docker web and db                       | $ docker-compose run web bash     | env_file in docker-compose.                |
+|       | container as bash.                                 | $ docker-compose run db bash, →   | psql -h db -U $username --dbname=$dbname   |
+|-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
+| DONE  | Pointer User du blog vers mon CustomUser           | override djoser UserSerializers   |                                            |
+|       |                                                    | and UserCreateSerializers         |                                            |
+|-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
+| DONE  | JWT authentication, (for frontend)                 |                                   |                                            |
+|-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
+| DONE  | Session authentication for (api-docs & admin)      |                                   |                                            |
+|-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
+| DONE  | Implementer le CRUD API sur l’User(JWT, SESSION)   | Tester avec open-api-docs         |                                            |
+|-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
+| DONE  | Implementer le Read API sur l’article,             | Tester la lecture (list, details) |                                            |
+| DONE  |                                                    | ArticleSerialiser                 |                                            |
+| DONE  |                                                    | ArticleList,DetailsView           |                                            |
+|       |                                                    | ————————————————————————————————— |                                            |
+| DONE  | Implementer le Read API sur Categorie              | de l’API et le dashboard          |                                            |
+| DONE  |                                                    | CategorySerialiser                |                                            |
+| DONE  |                                                    | CategoryList,DetailsView          |                                            |
+| TODO  | Add sub-catergory feature                          | ecom-aptus can help !             |                                            |
+|       |                                                    | ————————————————————————————————— |                                            |
+| DONE  | Implementer le Read API sur Author                 | de l’API et le dashboard          |                                            |
+| DONE  |                                                    | AuthorSerialiser                  |                                            |
+|-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
+| DONE  | Add UUID field to Article and Categorie            |                                   |                                            |
+|-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
+| DONE  | Migrate to docker (exit virtualenv)                | docker-compose, Dockerfile        | From now install all package inside docker |
+|-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
+| DONE  | API Unittest for custom user                       | Make factory, TestCase            | Use Faker and factory-boy                  |
+|-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
+| DONE  | API Unittest for article models                    | Make factory, TestCase            | Use Faker and factory-boy                  |
+|-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
+| DONE  | API Unittest for catergory models                  | Make factory, TestCase            | Use Faker and factory-boy                  |
+|-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
+| DONE  | API Unittest for custom author models              | Make factory, TestCase            | Use Faker and factory-boy                  |
+|-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
+| DONE  | API Unittest for custom comment models             | Make factory, TestCase            | Use Faker and factory-boy                  |
+|-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
+| ?     | API Unittest for article endpoints                 | Make factory, TestCase            | Use Faker and factory-boy                  |
+|-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
+| ?     | API Unittest for catergory endpoints               | Make factory, TestCase            | Use Faker and factory-boy                  |
+|-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
+| ?     | API Unittest for custom author models              | Make factory, TestCase            | Use Faker and factory-boy                  |
+|-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
+|       | API Unittest for custom comment models             | Make factory, TestCase            | Use Faker and factory-boy                  |
+|-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
+| ?     | API article serialiser                             |                                   | Use Faker and factory-boy and APITestCase  |
+|-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
+| ?     | API catergory serialiser                           |                                   | Use Faker and factory-boy and APITestCase  |
+|-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
+|       | Deployer l’API sur Heroku avec les steps dans →    | deployment_steps(f)               |                                            |
+|-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
+|       | Switch to frontend, develop until ...              |                                   |                                            |
+|-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
+|       | Add translation Français Englais                   |                                   |                                            |
+|-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
+| DONE  | Afficher l’image de article/catergory dans la list |                                   | Dans l’admin django                        |
+|-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
+| TODO  | Delete media file dynamically when delete object   |                                   |                                            |
+|-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
+|       |                                                    |                                   |                                            |
+|       |                                                    |                                   |                                            |
+|       |                                                    |                                   |                                            |
+|       |                                                    |                                   |                                            |
+|       |                                                    |                                   |                                            |
+|       |                                                    |                                   |                                            |
+|       |                                                    |                                   |                                            |
+|       |                                                    |                                   |                                            |
+|       |                                                    |                                   |                                            |
+|       |                                                    |                                   |                                            |
+|       |                                                    |                                   |                                            |
+|-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
+|       | Contribuer a Bona-blog                             | Create nom branch, commiter and   |                                            |
+|       |                                                    | faire un pull-requeste            |                                            |
+|-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
+|       |                                                    |                                   |                                            |
+|       |                                                    |                                   |                                            |
+|       |                                                    |                                   |                                            |
+|       |                                                    |                                   |                                            |
