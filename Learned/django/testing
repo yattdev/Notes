@@ -2,3 +2,12 @@ testing
 
 
 Django testing for note implementation:
+   Use Faker and factory_boy as tools, there is powerfull
+
+    image = factory.LazyAttribute(
+            lambda _: ContentFile(
+                factory.django.ImageField()._make_data(
+                    {'width': 1024, 'height': 768}
+                ), 'example.jpg'
+            )
+        )
