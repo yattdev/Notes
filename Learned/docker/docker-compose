@@ -1,0 +1,50 @@
+docker-compose
+
+
+# docker-compose
+→ d-c = docker-compose
+d-c run --user="root" web bash
+docker-compose run --help
+docker-compose run $service bash
+docker-compose up
+docker-compose up -d
+docker-compose up -d --build
+docker-compose down
+docker-compose down —volumes
+
+# Iamge
+docker image ls
+docker image —help
+
+# Container
+docker container ls
+docker container —help
+
+# Volume
+docker volume ls
+docker volume —help
+
+
+—————————————————————————-
+# When building in Dockerfile
+   USER root
+   • Run root operation here
+   • Change user back to cassandra
+   USER cassandra
+
+—————————————————————————-
+RUN adduser -D $USER \
+   && echo “$USER ALL=(ALL) NOPASSWD: ALL” > /etc/sudoers.d/$USER \
+           && chmod 0440 /etc/sudoers.d/$USER
+           USER $USER
+           WORKDIR $HOME
+           RUN whoami
+           RUN sudo whoami
+
+RUN adduser -D -ms $USER \
+        && echo "$USER ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/$USER \
+        && chmod 0440 /etc/sudoers.d/$USER
+USER $USER
+WORKDIR $HOME/yattblog/
+RUN whoami
+RUN sudo whoami
