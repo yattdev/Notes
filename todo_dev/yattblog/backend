@@ -38,23 +38,23 @@ backend
 |-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
 | DONE  | Migrate to docker (exit virtualenv)                | docker-compose, Dockerfile        | From now install all package inside docker |
 |-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
-| DONE  | API Unittest for custom user                       | Make factory, TestCase            | Use Faker and factory-boy                  |
+| DONE  | API Unittest for custom user                       | factory, Faker(unique)            | factory(django.Dj.., ImageField),          |
 |-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
-| DONE  | API Unittest for article models                    | Make factory, TestCase            | Use Faker and factory-boy                  |
+| DONE  | API Unittest for article models                    | factory, Faker(unique)            | django_get_or_create = (...,)              |
 |-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
-| DONE  | API Unittest for catergory models                  | Make factory, TestCase            | Use Faker and factory-boy                  |
+| DONE  | API Unittest for catergory models                  | factory, Faker(unique)            | Use setUpTestData()                        |
 |-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
-| DONE  | API Unittest for custom author models              | Make factory, TestCase            | Use Faker and factory-boy                  |
+| DONE  | API Unittest for custom author models              | factory, Faker(unique)            | Use tearDownClass, don’t forget ‘super()’  |
 |-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
-| DONE  | API Unittest for custom comment models             | Make factory, TestCase            | Use Faker and factory-boy                  |
+| DONE  | API Unittest for custom comment models             | factory, Faker(unique)            | Use pdb (debug tool for python)            |
 |-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
-| ?     | API Unittest for article endpoints                 | Make factory, TestCase            | Use Faker and factory-boy                  |
+| DONE  | API Unittest for article endpoints                 | factory, Faker(unique)            | split test small piece of methode that ma- |
 |-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
-| ?     | API Unittest for catergory endpoints               | Make factory, TestCase            | Use Faker and factory-boy                  |
+| DONE  | API Unittest for catergory endpoints               | factory, Faker(unique)            | ke debug and find issue more quickly       |
 |-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
-| ?     | API Unittest for custom author models              | Make factory, TestCase            | Use Faker and factory-boy                  |
+| TODO  | API Unittest for custom author models              | factory, Faker(unique)            |                                            |
 |-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
-|       | API Unittest for custom comment models             | Make factory, TestCase            | Use Faker and factory-boy                  |
+| TODO  | API Unittest for custom comment models             | factory, Faker(unique)            |                                            |
 |-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
 | ?     | API article serialiser                             |                                   | Use Faker and factory-boy and APITestCase  |
 |-------+----------------------------------------------------+-----------------------------------+--------------------------------------------|
