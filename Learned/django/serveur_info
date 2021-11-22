@@ -1,0 +1,30 @@
+serveur_info
+
+
+#Difference entre Ngnix, Gunicorn et wsgi
+      Users de l'internet ask page  ←→ (web server + `reverse proxy`) == (Ngnix, Apache, etc) listen:80 <--> `wsgi` (gunicorn, uwsgi, cherryPy, ) ←→  Application python(Django, Flask)
+   Users internet <--> (Ngnix, Apache, etc) <--> WSGI(gunicorn, uwsgi, cherryPy, mod_wsgi) <--> Application python(Django, Flask)
+
+   Ngnix, Apache, Uwsgi: Sont des server web avec la fonction `reverse proxy`
+      Reverse proxy: c'est quoi ? C'est une fonction qui permet au web serveur de receptionner les
+                     requestion venant du web et de les transmet au wsgi.
+   WSGI: La Web Server Gateway Interface, est une specification qui definis une interfaction entre
+         les serveurs web et les applications Python.
+         • Simplement un sert d’interface entre une application Python et un serveur web.
+            ▹ Les specifications quel definis sont des regles que les recpteurs et emetteur doivent
+               respecter pour pouvoir communiquer.
+            ▹ Ces specifications ont ete definis avec le PEP 3333.
+         • Pourquoi utiliser wsgi ?: Oui nous pouvons faire directement communique
+            les applications python avec les serveurs-web, en cela nous definissons
+            nos propore regle de communication entre notre application et un serveur,
+            et ceci a chaque fois que nous decidons de changer de serveurs-web, c’est
+            une operation couter en temps et en argent et nos choix sont limités.
+
+            → Vous deviner, c’est la que WSGI vient a notre rescouse, avec lui plus
+            besoin de faire de changement dans notre application, si nous souhaitons
+            un jour change de serveur-web, on install juste notre serveur-web et lui
+            fournie le wsgi(Qui contient les regle sur comment il parler) de notre application.
+
+#Deploy django on linode or Iaas
+   IPV4: 172.105.0.64
+   RESERVE DNS: 172-105-0-64.ip.linodeusercontent.com
