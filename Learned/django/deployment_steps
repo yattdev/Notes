@@ -1,6 +1,6 @@
 deployment_steps
 
-FOR Paas like heroku:
+# FOR Paas like heroku:
 | STEPS               | TODO                                                                 | SOME ISSUE/INFO           |
 |---------------------+----------------------------------------------------------------------+---------------------------|
 |                     | Use environment variable with os.environ.get(variable_name)          | ENV=PRODUCTION            |
@@ -60,3 +60,57 @@ FOR Paas like heroku:
 |---------------------+----------------------------------------------------------------------+---------------------------|
 |                     | * * * * * HOURA !!! YOUR APPLICATION IS ONLINE * * * * *             |                           |
 |---------------------+----------------------------------------------------------------------+---------------------------|
+
+# For Iaas like AWS, DigitalOcean, Linode, Kamatera etc.
+   → Requirements:
+      • Django, Postgres, Docker, docker-compose, Gunicorn, Nginx, Redis
+| STEPS          | TODO                                                     | SOME ISSUE/INFO                              |
+|----------------+----------------------------------------------------------+----------------------------------------------|
+| Git log        | Git log contents somewhat, the ways/todo of deployment.  | prod.env: docker prod (DEBUG=0)              |
+|----------------+----------------------------------------------------------+----------------------------------------------|
+| .env files(3)  | Create 3three .env file: host.env, prod.env, docker.env  | host.env: local host machine (DEBUG=1)       |
+| ENV VARIABLES  |                                                          | docker.env: docker dev host (DEBUG=1)        |
+|                |                                                          | prod.env: docker prod (DEBUG=0)              |
+| Implementation |                                                          |                                              |
+|----------------+----------------------------------------------------------+----------------------------------------------|
+| docker-compose | Create 3three docker-compose: docker-compose.yml,        | Take care for: env files, dockerFile         |
+| files(3)       | docker-compose.override.yml, docker-compose.prod.yml     |                                              |
+|                |                                                          |                                              |
+|                |                                                          |                                              |
+|----------------+----------------------------------------------------------+----------------------------------------------|
+| Dockerfile     | Create 3three Dockerfile: Dockerfile (host docker),      | Take care for: =! of apk/apt-get/apt,        |
+| files(3)       | Dockerfile.prod(docker prod), nginx/Dockerfile           | User permissions, multi-staging for          |
+|                |                                                          | prod, mediafiles, staticfiles, clean-        |
+|                |                                                          | up APT, entrypoint, netcat,                  |
+|                |                                                          | Alpine != buster,                            |
+|----------------+----------------------------------------------------------+----------------------------------------------|
+| entrypoint     | Create 2tow files: docker dev(entrypoint.yml)            | Content the firsts todo when build done      |
+| files(2)       | and for docker prod(entrypoint.prod.yml)                 |                                              |
+|----------------+----------------------------------------------------------+----------------------------------------------|
+| Installations  | Gunicorn, netcat→ Dockerfile, bunch of build             |                                              |
+|                | deps→ Dockerfile                                         |                                              |
+|----------------+----------------------------------------------------------+----------------------------------------------|
+| settings.py    |                                                          | Use django-environ to swith .env files       |
+|                |                                                          | Use os.environ.get() intead of env()         |
+|                |                                                          | TODO: test django-environ inside docker      |
+|                |                                                          | Use Nginx for static and media               |
+|----------------+----------------------------------------------------------+----------------------------------------------|
+| DEBUG          |                                                          |                                              |
+|----------------+----------------------------------------------------------+----------------------------------------------|
+| nginx service  | add nginx service to docker-compose.prod.yml, create     | .../site-available, .../site-enable← ln,     |
+|                | nginx_conf dir and add Dockerfile and nginx.conf         | load-balancing with list server.             |
+|----------------+----------------------------------------------------------+----------------------------------------------|
+| Some stuff     | Some stuff to display here before Let’s encrypt          |                                              |
+|----------------+----------------------------------------------------------+----------------------------------------------|
+| ### STEP-2 ### | DJANGO-LETS-ENCRYPT                                      |                                              |
+|----------------+----------------------------------------------------------+----------------------------------------------|
+| Create →       | Create docker-compose.staging.yml and .staging.env       | docker-compose.staging.yml is use for tesing |
+| nginx-proxy→   | GENERATE a reverse proxy config for containers qui in    | purpose of let’s encrypt and use nginx-proxy |
+| Create dir for | same network that have thr VIRTUAL_HOST and dyn update   |                                              |
+| staging files  | it VIRTUAL_HOST config, that why create multi-env file   |                                              |
+| ————————————   | in addition of .staging.env, create .staging.db.env and  |                                              |
+| env files      | .staging.proxy-companion.env(nginx-proxy-letsencrypt)    |
+|----------------+----------------------------------------------------------+----------------------------------------------|
+| nginx.conf     | inside nginx/nginx.conf add to static and media location |                                              |
+|                | this: add_header Access-Control-Allow-Origin *;          |                                              |
+|----------------+----------------------------------------------------------+----------------------------------------------|
