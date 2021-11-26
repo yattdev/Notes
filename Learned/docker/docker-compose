@@ -48,3 +48,43 @@ USER $USER
 WORKDIR $HOME/yattblog/
 RUN whoami
 RUN sudo whoami
+
+# Django Docker Gunicorn Nginx
+
+• J’ai deja une base de docker-compose and Dockerfile
+• Pour `docker-compose`:
+   ◦ Creer 2 autres fichier docker-compose: qui vont re-ecrire docker-compose.yml
+      ◦ docker-compose.override.yml :
+         ▸ automatiquement utiliser en developpement avec: docker-compose up ...
+      ◦ docker-compose.prod.yml: for production mode
+         ▸ command to use it: docker-compose -f docker-compose.yml -f docker-compose.prod.yml up ...
+         ▸ Elle definis son propre Dockerfile.prod: qui utilise le multi-staging
+            c-a-d creer d’abord une image la stocke pour ensuite creer un autre a partir celle stocké.
+            Ceci a pour but de reduire la taille de l’image
+   ◦ Ce que j’ai de pipenv:
+      ◦ Generer un requirements: pipenv lock -r > requirements.txt
+      ◦ Utiliser requirements avec pipenv: pipenv install, install les deps a apartir de requirements.txt
+      si Pipfile ou Pipfile.lock n’est pas trouvé.
+• Pour `entrypoint`:
+   ◦ Installer netcat:
+   ◦ Un fichier sh, qui loop jusqu’a ce que postgres soit displonible pour django
+   ◦ Utiliser comme entrypoint, elle execute les 1er commande sur le container.
+• `Les variable d’environement`:
+   ◦ Pas besoin de pipenv en production:
+      ◦ Lorque tu pret a deploy genere le requirements avec: `pipenv lock -r > requirements.txt`
+   ◦ On peut en utiliser plusieurs (.env, .docker.env, .docker.prod.env)
+   ◦ → .docker.env: dans Dockerfile
+   ◦ → .docker.prod.env: dans Dockerfile.prod
+   ◦ On ajoute une condition dans le settings pour pointer ce qu’il faut l’environmenet
+      ◦ Et c’est la que django-environ vient a notre rescus.
+• `Dockerfile` et `Dockerfile.prod`:
+   • Dockerfile for local docker developpement
+   • Dockerfile.prod for docker production
+      • We make a multi-staging on it, to smaller the end image
+• x-`Alpine`: `Not work for me now`: Is it a small image fro x image
+   ◦ In Alpine: apt-get install == apk add respectivement apk update
+   ◦ ...: useradd → adduser and groupadd → addgroup
+• x-`buster`: `Work well` like Alpine it is small and:
+   ◦ We can use apt-get like on ubuntu, because x-buster is base on debian(Ubuntu mother)
+   ◦ My app work well on it
+• Clean-up APT after build with Dockerfile done.
