@@ -18,6 +18,13 @@ REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES':
     DEFAULT_RENDERER_CLASSES,
 }
+    # third party apps urls for auth to include on app api
+    path("auth", include("rest_framework.urls")),
+    path('auth', include('djoser.urls'), name="auth"),
+    path('auth', include('djoser.urls.jwt')),
+
+   # For login and logout: Create view for, or override django admin view to
+    add login redirect to api-docs/admin-dashboard
 
 # Configuration for dj_rest_auth
 REST_USE_JWT = True
