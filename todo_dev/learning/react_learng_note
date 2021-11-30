@@ -91,7 +91,7 @@ react_learng_note
       •  Lorsqu’on utilise, react ne fait plus de re-render lorsqu’on appelle la fonction tant que le retour de celle-ci n’est pas
          modifier.
       • utiliser pour wrapper la fonction passer comme props
-   UseMeno: useMeno
+   UseMemo: useMemo
       • Utiliser pour optimiser les calculs couté en temps et/ou memoire
       • Lorsqu’on utilise, react n’effectue plus ce calcul tant le retour ne change pas.
       • On wrap la fontion qui fait le calcul avec useMemo:
