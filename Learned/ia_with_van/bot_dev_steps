@@ -6,14 +6,16 @@ bot_dev_steps
 |-------+-------------------------+---------------------+-----------------------|
 | DONE  | Launch rasa init        | $ rasa init         | yes a tout les inputs |
 |-------+-------------------------+---------------------+-----------------------|
-|       | GO through files        |                     |                       |
+| DONE  | GO through files        |                     |                       |
 |-------+-------------------------+---------------------+-----------------------|
-|       | Define Commands line    |                     |                       |
-|       | and useful              |                     |                       |
+|       | Define Commands line    | $ rasa init         | CReate new project    |
+|       | and useful              | $ rasa shell        | Talk to chatbot       |
+|       |                         | $ rasa interactive  | Supervised Learning   |
+|       |                         | $ rasa star         | Star server           |
 |-------+-------------------------+---------------------+-----------------------|
-|       | rasa train/test cmd     |                     |                       |
+| DONE       | rasa train/test cmd     |                     |                       |
 |-------+-------------------------+---------------------+-----------------------|
-|       | Install rasa-x          |                     |                       |
+| DONE      | Install rasa-x          |                     |                       |
 |-------+-------------------------+---------------------+-----------------------|
 |       | Go through rasa-x       |                     |                       |
 |-------+-------------------------+---------------------+-----------------------|
