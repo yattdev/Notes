@@ -1,0 +1,15 @@
+tuto
+
+Url for tuto: https://www.youtube.com/watch?v=ANdSdIlgsEw
+
+Comment react native fonctionne comparer a reactJS
+
+| ReactJs          | React Native                                   | Android      | IOS    |
+|------------------+------------------------------------------------+--------------+--------|
+| HTML tags as div | UI Components in JSX format <Text>, <View>,... | Android.view | UIVIEW |
+|------------------+------------------------------------------------+--------------+--------|
+|                  |                                                |              |        |
+
+There is tow way to build react-native app:
+One: Using Expo, wich quick setup (ready to start) with some limited
+Tow: React CLI that more advanced, but with full control over application
