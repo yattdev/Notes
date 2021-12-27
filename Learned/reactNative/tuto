@@ -15,42 +15,73 @@ One: Using Expo, wich quick setup (ready to start) with some limited
 Tow: React CLI that more advanced, but with full control over application
 
 # How to setup Navigation
-| STEPS                             | ACTION                                                                     | Info                             |
-|-----------------------------------+----------------------------------------------------------------------------+----------------------------------|
-| Install react native navigation   | go to: https://reactnavigation.org/docs/getting-started/                   |                                  |
-| There is 3 installation to do     | 1: Install react native navigation                                         |                                  |
-|                                   | 2: Install the core fonctionnality depend if we usign expo                 |                                  |
-|                                   | or React native CLI                                                        |                                  |
-|                                   | 3: Install CreateStackNavigator from section navigation                    |                                  |
-|-----------------------------------+----------------------------------------------------------------------------+----------------------------------|
-| Create a NavigationContainer      | import {NavigationContainer} from '@react-navigation/native';              |                                  |
-|                                   | <NavigationContainer>...</NavigationContainer>                             |                                  |
-|-----------------------------------+----------------------------------------------------------------------------+----------------------------------|
-| Create createNativeStackNavigator | const Stack = createNativeStackNavigator();                                | Note there is                    |
-|                                   | import {createNativeStackNavigator} from '@react-navigation/native-stack'; | ‘@react-navigation/native-stack’ |
-|                                   | I use: '@react-navigation/native-stack' instead of '.../satck';            | and '@react-navigation/stack'    |
-|-----------------------------------+----------------------------------------------------------------------------+----------------------------------|
-| Create a navigation stack from    | <Stack.Navigator>                                                          |                                  |
-| const Stack = ... above           | <Stack.Screen name="PageA" component={PageA} />                            |                                  |
-|                                   | <Stack.Screen name="PageB" component={PageB} />                            |                                  |
-|                                   | </Stack.Navigator>                                                         |                                  |
-|-----------------------------------+----------------------------------------------------------------------------+----------------------------------|
-| There is Stack, Tab, Material Tab | $ npm install @react-navigation/bottom-tabs                                |                                  |
-| Navigations etc.                  | $ npm install @react-navigation/drawer                                     |                                  |
-|                                   | $ npm install @react-navigation/material-bottom-tabs react-native-paper    |                                  |
-|                                   | react-native-vector-icons                                                  |                                  |
-|                                   | $ npm install @react-navigation/material-top-tabs react-native-tab-view    |                                  |
-|-----------------------------------+----------------------------------------------------------------------------+----------------------------------|
-| Added fonts to app                | 1: Go to https://fonts.google.com/ and download favorite fonts             |                                  |
-|                                   | 2: Create fonts dir in assets/ folder in app root                          |                                  |
-|                                   | 3: Extract downloaded font and copy them to assets/fonts folder            |                                  |
-|                                   | 4: launch following cmd: $ npx react-native link: You have to type this    |                                  |
-|                                   | each time u add new font.                                                  |                                  |
-|-----------------------------------+----------------------------------------------------------------------------+----------------------------------|
-|                                   |                                                                            |                                  |
-|                                   |                                                                            |                                  |
-|                                   |                                                                            |                                  |
-|                                   |                                                                            |                                  |
-|                                   |                                                                            |                                  |
-|                                   |                                                                            |                                  |
-|-----------------------------------+----------------------------------------------------------------------------+----------------------------------|
+| STEPS                             | ACTION                                                                        | Info                              |
+|-----------------------------------+-------------------------------------------------------------------------------+-----------------------------------|
+| Install react native navigation   | go to: https://reactnavigation.org/docs/getting-started/                      |                                   |
+| There is 3 installation to do     | 1: Install react native navigation                                            |                                   |
+|                                   | 2: Install the core fonctionnality depend if we usign expo                    |                                   |
+|                                   | or React native CLI                                                           |                                   |
+|                                   | 3: Install CreateStackNavigator from section navigation                       |                                   |
+|-----------------------------------+-------------------------------------------------------------------------------+-----------------------------------|
+| Create a NavigationContainer      | import {NavigationContainer} from '@react-navigation/native';                 |                                   |
+|                                   | <NavigationContainer>...</NavigationContainer>                                |                                   |
+|-----------------------------------+-------------------------------------------------------------------------------+-----------------------------------|
+| Create createNativeStackNavigator | const Stack = createNativeStackNavigator();                                   | Note there is                     |
+|                                   | import {createNativeStackNavigator} from '@react-navigation/native-stack';    | ‘@react-navigation/native-stack’  |
+|                                   | I use: '@react-navigation/native-stack' instead of '.../satck';               | and '@react-navigation/stack'     |
+|-----------------------------------+-------------------------------------------------------------------------------+-----------------------------------|
+| Create a navigation stack from    | <Stack.Navigator>                                                             |                                   |
+| const Stack = ... above           | <Stack.Screen name="PageA" component={PageA} />                               |                                   |
+|                                   | <Stack.Screen name="PageB" component={PageB} />                               |                                   |
+|                                   | </Stack.Navigator>                                                            |                                   |
+|-----------------------------------+-------------------------------------------------------------------------------+-----------------------------------|
+| There is Stack, Tab, Material Tab | $ npm install @react-navigation/bottom-tabs                                   |                                   |
+| Navigations etc.                  | $ npm install @react-navigation/drawer                                        |                                   |
+|                                   | $ npm install @react-navigation/material-bottom-tabs react-native-paper       |                                   |
+|                                   | react-native-vector-icons                                                     |                                   |
+|                                   | $ npm install @react-navigation/material-top-tabs react-native-tab-view       |                                   |
+|-----------------------------------+-------------------------------------------------------------------------------+-----------------------------------|
+| Added fonts to app                | 1: Go to https://fonts.google.com/ and download favorite fonts                |                                   |
+|                                   | 2: Create fonts dir in assets/ folder in app root                             |                                   |
+|                                   | 3: Extract downloaded font and copy them to assets/fonts folder               |                                   |
+|                                   | 4: launch following cmd: $ npx react-native link: You have to type this       |                                   |
+|                                   | each time u add new font.                                                     |                                   |
+|-----------------------------------+-------------------------------------------------------------------------------+-----------------------------------|
+| Use Async Store                   | To use Async Storage we go to link below click on get started to install it:  | We use Asycn storage user not     |
+|                                   | https://react-native-async-storage.github.io/async-storage/                   | secret data to local storage, so  |
+|                                   | $ npm install @react-native-async-storage/async-storage                       | can save data and return to user, |
+|                                   | $ cd android // cd to android folder and launch gradle, $ ./gradlew clean     | event app is turn off/on.         |
+|                                   | import AsyncStorage from '@react-native-async-storage/async-storage';         |                                   |
+|                                   | AsyncStorage.getItem('username').then(value => {                              |                                   |
+|                                   | if (value != null) {                                                          |                                   |
+|                                   | setName(value);                                                               |                                   |
+|                                   | }                                                                             |                                   |
+|                                   | });                                                                           |                                   |
+|                                   | To set value from local storage: AsyncStorage.setItem('username', name);      |                                   |
+|-----------------------------------+-------------------------------------------------------------------------------+-----------------------------------|
+| Use SQLite as Database            | To use SQLite we have to install it from below link:                          |                                   |
+|                                   | https://github.com/andpor/react-native-sqlite-storage                         |                                   |
+|                                   | $ npm install —save react-native-sqlite-storage                               |                                   |
+|                                   | $ cd android // cd to android folder and launch gradle, $ ./gradlew clean     |                                   |
+|                                   | Create a constant to open data base: const db = SQLite.openDatabase(...)      |                                   |
+|                                   | Use constant ‘db’ to perform to database as create, insert, select, update... |                                   |
+|                                   | db.transaction(tx => {                                                        |                                   |
+|                                   | tx.executeSql(‘SQL QUERY HERE’, [], (success) => {}, (error) => {})})         |                                   |
+|-----------------------------------+-------------------------------------------------------------------------------+-----------------------------------|
+|                                   |                                                                               |                                   |
+|                                   |                                                                               |                                   |
+|                                   |                                                                               |                                   |
+|                                   |                                                                               |                                   |
+|                                   |                                                                               |                                   |
+|                                   |                                                                               |                                   |
+|                                   |                                                                               |                                   |
+|                                   |                                                                               |                                   |
+|                                   |                                                                               |                                   |
+|                                   |                                                                               |                                   |
+|                                   |                                                                               |                                   |
+|                                   |                                                                               |                                   |
+|                                   |                                                                               |                                   |
+|                                   |                                                                               |                                   |
+|                                   |                                                                               |                                   |
+|                                   |                                                                               |                                   |
+|-----------------------------------+-------------------------------------------------------------------------------+-----------------------------------|
