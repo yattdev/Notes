@@ -68,13 +68,13 @@ Tow: React CLI that more advanced, but with full control over application
 |                                   | db.transaction(tx => {                                                        |                                   |
 |                                   | tx.executeSql(‘SQL QUERY HERE’, [], (success) => {}, (error) => {})})         |                                   |
 |-----------------------------------+-------------------------------------------------------------------------------+-----------------------------------|
-|                                   |                                                                               |                                   |
-|                                   |                                                                               |                                   |
-|                                   |                                                                               |                                   |
-|                                   |                                                                               |                                   |
-|                                   |                                                                               |                                   |
-|                                   |                                                                               |                                   |
-|                                   |                                                                               |                                   |
+| Use redux, to manage dataflow     | To use Redux we have to few package: redux, react-redux, thunk                |                                   |
+|                                   | 1 $ npm i redux react-redux thunk                                             |                                   |
+|                                   | 2 Create a redux folder                                                       |                                   |
+|                                   | 3 Create action.jsx file to define action type                                |                                   |
+|                                   | 4 Create reducer.jsx to define initialState and useReducer function           |                                   |
+|                                   | 5 Create store.jsx to combine multiple reducer if u have, create constante    |                                   |
+|                                   | store to apply thunk middleware, for write async logic option came from thunk |                                   |
 |                                   |                                                                               |                                   |
 |                                   |                                                                               |                                   |
 |                                   |                                                                               |                                   |
