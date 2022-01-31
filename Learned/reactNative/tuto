@@ -1,6 +1,6 @@
 tuto
 
-Url for tuto: https://www.youtube.com/watch?v=ANdSdIlgsEw
+# Url for tuto: https://www.youtube.com/watch?v=ANdSdIlgsEw
 
 Comment react native fonctionne comparer a reactJS
 
@@ -13,6 +13,43 @@ Comment react native fonctionne comparer a reactJS
 There is tow way to build react-native app:
 One: Using Expo, wich quick setup (ready to start) with some limited
 Tow: React CLI that more advanced, but with full control over application
+
+#React Hooks Context(useContext) VS Redux.
+ → React context est utiliser pour stoker nos state et les dispatcher a travers l’application,
+ le useContext, agis comme un consommateur, tandis que le Provider se charge d’ajouter et update
+ le context.
+ → Redux fait aussi du state management, et Redux utilise en interne React Context, ceci etant
+ Redux, fait bien plus que stoker et update avec set/get, il  nosu force a utiliser les actions
+ pour gerer nos state, et ces actions font bien plus que le ajouter/update un state, on peu
+ effcetuer les actions complexe et varier, et cela previens les bugs.
+
+ • _Conclusion_: Utiliser React Context, tout le temps que votre application reste petite
+ mais du moment ou remarquer qu’il monte en complexité, notanment dans la gestion du state,
+ en ce moment switcher sur Redux, qui offre plus de robustesse.
+
+# React Comtext API(useContext) + useReducer VS Redux:
+ Comme definis plus haut avec, Redux VS React Context API, qu’en est il si en associe
+ React Context API et useReducer contre Redux, car l’argument que j’ai avancer pour
+ utiliser Redux peut etre simplement effectuer par useReducer pour gere les taches au
+ moment il deviennent complexe.
+
+ OUI ! React Context API + useReducer reviens presque a rendre Redux obsélète; cependant
+ Redux poccede encors des fonctionnalités:
+ 1 Centralise le state de telle sorte qu’une seul fontion dispatch est utliser pour effectuer
+ un traitement contrairement a useReducer dont les dispatcher sont coupler a la fonction
+ reducer dont il modifier le state, si on a plusieurs reducer fonction, cela reviens a utiliser
+ des dispatch different propre a chaque reducer function.
+
+ 2 First, there is no native feature (yet) which combines all reducers to
+ one ultimate reducer. Redux is offering this feature, but in plain React we
+ would have to implement it ourselves. Only if we were able to combine all
+ state containers from all useReducer hooks, we could speak of one state container.
+
+ 3 Redux possedent des middleware, tres utils, useReducer na poccede pas au moment j’ecris
+ ces lignes.
+
+
+
 
 # How to setup Navigation
 | STEPS                             | ACTION                                                                        | Info                              |
