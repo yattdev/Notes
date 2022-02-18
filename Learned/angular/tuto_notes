@@ -1,0 +1,72 @@
+tuto_notes
+
+
+| Suject                                                        | Infos                                                                                | Opinoins                                   |
+|---------------------------------------------------------------+--------------------------------------------------------------------------------------+--------------------------------------------|
+| Hooks                                                         | On a plusieurs hooks mais les plus                                                   | Comme les useState dans reactjs            |
+|                                                               | utilisé sont: ngOnInit, ngOnChanges et ngOnDestroy                                   |                                            |
+|                                                               |                                                                                      |                                            |
+|---------------------------------------------------------------+--------------------------------------------------------------------------------------+--------------------------------------------|
+| Component communication                                       | Il y’a 4 facons de communiquer avec les components.                                  |                                            |
+| event binding                                                 | 1- Binding(@Input, @Output)                                                          |                                            |
+| tow way binding                                               | 2- Reference (@ViewChild & @ContentChild)                                            |                                            |
+| propriety binding                                             | 3- Provider (Service)                                                                |                                            |
+|                                                               | 4- Template Outlet                                                                   |                                            |
+|---------------------------------------------------------------+--------------------------------------------------------------------------------------+--------------------------------------------|
+| String Interpolation, Attribut binding/Liaison par Attribut   | String Interpolation: on wrap les attribut avec: {{ attribut }}                      |                                            |
+| et les proprieties binding.                                   | Attribut binding/Liaison par Attribut, c’est la liaison des attribut                 |                                            |
+| proprieties binding: ([attr.sale]=”1+1”, [class.sale]=”true”, | au propriete HTML (class, id, src, alt...) pour ce faire on wrap                     |                                            |
+| [class]=”cl1: true, cl2:false”, [style.width]=”width”,        | la propriete: [class]=”attribut”.                                                    |                                            |
+| [style]=”’width: 2, heigth:2’/{width: 2, heigth:2}”, ...)     |                                                                                      |                                            |
+|---------------------------------------------------------------+--------------------------------------------------------------------------------------+--------------------------------------------|
+| Il y’a 3 facons d’inclure du css:                             | 1- styles proprieties                                                                |                                            |
+| encapsulation: ViewEncapsulation.None, Otherwire the css is   | 2- styleUrls proprieties                                                             |                                            |
+| apply localy (component scope by default)                     | 3- Directly include css file in to html file with <link href=””/> tags.              |                                            |
+|                                                               | — We define globaly css styles by write them in style.css file.                      |                                            |
+|---------------------------------------------------------------+--------------------------------------------------------------------------------------+--------------------------------------------|
+| ngContent                                                     | On utilise ngContent to inject a html inside a component.                            |                                            |
+|                                                               | - On peut utilisé conditionne l’affiche du contenu ng-content avec les               |                                            |
+|                                                               | attribut <p attribut>text<p/> →  <ng-content attribut></ng-content>                  |                                            |
+|---------------------------------------------------------------+--------------------------------------------------------------------------------------+--------------------------------------------|
+| template statement.                                           | Juste la gestion des conditions d’affichage des component. (? :, &&)                 |                                            |
+|---------------------------------------------------------------+--------------------------------------------------------------------------------------+--------------------------------------------|
+| Pipe(DatePipe, UpperCasePipe, CurrencyPipe, PercentPipe...)   | Les pipes sont les fonctions utilisé pour formaté les data sur la template           |                                            |
+| we can create a custom pipe too with following command:       | $ ng g p pipename, w’ll implement transform method inside it.                        |                                            |
+|---------------------------------------------------------------+--------------------------------------------------------------------------------------+--------------------------------------------|
+| Template variable.                                            | Ce sont des variables definie sur la template qu’on peut utilisé autre part          |                                            |
+|                                                               | dans le meme template. the scope of variable is the scope of tags where it in.       |                                            |
+|---------------------------------------------------------------+--------------------------------------------------------------------------------------+--------------------------------------------|
+| Les directives:                                               | (Component directives, Attribut directives, structure directives)                    |                                            |
+|---------------------------------------------------------------+--------------------------------------------------------------------------------------+--------------------------------------------|
+| Component directives                                          | [ngClass]=” . ? ‘’ : ‘’” vs [class.attr], ngStyle(as ngClass), ngModel(way binding). |                                            |
+|---------------------------------------------------------------+--------------------------------------------------------------------------------------+--------------------------------------------|
+| Attribut directives: Doivent etre declarer dans NgModule like | <p attrDirective></p> or dinamic: <p [attrDirective]=”’value’”></p>                  | we have ElementRef like useRef in reactjs. |
+| components pour pouvoir etre utilisé.                         |                                                                                      | el: ElementRef → constructor               |
+|---------------------------------------------------------------+--------------------------------------------------------------------------------------+--------------------------------------------|
+| structure directives: (NgIf, NgFor, NgSwitch)                 | NgIf: Display/Hide component: (true→ show),(false→ hide) <p *NgIf=”true”>...         |                                            |
+|                                                               | NgFor: To loop over variable: <p *NgFor=”let item of items; let i = index”>...       |                                            |
+|                                                               | ([NgSwitch]=”item.name”, *NgSwitchCase=”’yatt’”, *NgSwitchDefault=”’gone’”):         |                                            |
+|---------------------------------------------------------------+--------------------------------------------------------------------------------------+--------------------------------------------|
+| Dependency injection: Is act to use the services, should be   | service in Angular is use as useContext/redux in React or vuex in Vuejs.             |                                            |
+| declare in Provider inside app.module.ts.                     | $ ng g s servicename                                                                 |                                            |
+|---------------------------------------------------------------+--------------------------------------------------------------------------------------+--------------------------------------------|
+| Routing                                                       |                                                                                      |                                            |
+|---------------------------------------------------------------+--------------------------------------------------------------------------------------+--------------------------------------------|
+| Template-Driven form                                          |                                                                                      |                                            |
+|---------------------------------------------------------------+--------------------------------------------------------------------------------------+--------------------------------------------|
+| Reactive form                                                 |                                                                                      |                                            |
+|---------------------------------------------------------------+--------------------------------------------------------------------------------------+--------------------------------------------|
+| Form validation                                               |                                                                                      |                                            |
+|---------------------------------------------------------------+--------------------------------------------------------------------------------------+--------------------------------------------|
+| HTTP client.                                                  |                                                                                      |                                            |
+|---------------------------------------------------------------+--------------------------------------------------------------------------------------+--------------------------------------------|
+| Les proprietes/types personnalisees: Models.                  |                                                                                      |                                            |
+|---------------------------------------------------------------+--------------------------------------------------------------------------------------+--------------------------------------------|
+|                                                               |                                                                                      |                                            |
+|                                                               |                                                                                      |                                            |
+|                                                               |                                                                                      |                                            |
+|                                                               |                                                                                      |                                            |
+|                                                               |                                                                                      |                                            |
+|                                                               |                                                                                      |                                            |
+|                                                               |                                                                                      |                                            |
+|                                                               |                                                                                      |                                            |
