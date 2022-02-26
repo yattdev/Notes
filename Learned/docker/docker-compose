@@ -88,3 +88,6 @@ RUN sudo whoami
    ◦ We can use apt-get like on ubuntu, because x-buster is base on debian(Ubuntu mother)
    ◦ My app work well on it
 • Clean-up APT after build with Dockerfile done.
+
+# Connect to postgres on container
+psql -h db -U $username --dbname=$dbname
