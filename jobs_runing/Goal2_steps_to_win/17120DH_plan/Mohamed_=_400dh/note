@@ -1,0 +1,12 @@
+ <Link
+  href={MENU_LINKS.longRead.path}
+  as={`${MENU_LINKS.longRead.as}/${slug}`}
+>
+...............
+...............
+
+ </Link>
+ <Link
+              href={MENU_LINKS.longRead.path}
+              as={`${MENU_LINKS.longRead.as}/${slug}`}
+            >

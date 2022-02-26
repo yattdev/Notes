@@ -1,0 +1,25 @@
+le-club-2024
+
+
+| State                   | Action                                                                                                  | Infos                                                 |
+|-------------------------+---------------------------------------------------------------------------------------------------------+-------------------------------------------------------|
+| DONE                    | Change all routerLink occurrence:                                                                       | Warning: Magazine folder recursive not needed         |
+|                         | NOT WORK: routerLink=”/someUrl” to [ routerLink ]="’url.someUrl’ ! localize"                            | Warning: All button not routerLink, but some          |
+|                         | WORK: routerLink=”/someUrl” to routerLink="’/someUrl’ ! localize"                                       | most are (click) event, so url ‘someUrl’ came         |
+|                         |                                                                                                         | from server (https::/domaine.com/someUrl) should →    |
+|                         |                                                                                                         | (/someUrl).                                           |
+|-------------------------+---------------------------------------------------------------------------------------------------------+-------------------------------------------------------|
+|                         | Make dynamic all redirection: to do create a routing module on all as-                                  |                                                       |
+|                         | socialte component folder follow this link under fro more infos:                                        |                                                       |
+|                         | https://github.com/Greentube/localize-router/blob/master/demo/cli/src/app/users/users-routing.module.ts |                                                       |
+|-------------------------+---------------------------------------------------------------------------------------------------------+-------------------------------------------------------|
+| RouterLink translation: | /home → {fr/accuei}, /home → {en/home} : DONE                                                           |                                                       |
+| localize: DONE          | /magazine → {fr/magazine}, /home → {en/magazine}: DONE                                                  |                                                       |
+| button event click:     | /marathon → {fr/marathon}, /home → {en/marathon}: DONE                                                  |                                                       |
+|                         | /home → {fr/accuei}, /home → {en/home}                                                                  |                                                       |
+|-------------------------+---------------------------------------------------------------------------------------------------------+-------------------------------------------------------|
+|                         | [selected]: Cas dans une seul fichier: banner.component: DONE                                           |                                                       |
+|                         | router.url: Cas dans 2 fichiers: banner.component.html et account-menu.component.ts: DONE               | NOT need to update: account-menu.component.ts because |
+|                         |                                                                                                         | router.url not evaluate in condition(statement).      |
+|-------------------------+---------------------------------------------------------------------------------------------------------+-------------------------------------------------------|
+|                         |                                                                                                         |                                                       |
