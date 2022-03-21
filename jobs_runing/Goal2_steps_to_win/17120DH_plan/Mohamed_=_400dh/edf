@@ -1,13 +1,41 @@
 edf
 
-| STATE   | ACTIONS                  | INFOS                            |
-|---------+--------------------------+----------------------------------|
-| DONE    | SET NEXT_LOCALE=fr       | override user local default lang |
-|---------+--------------------------+----------------------------------|
-| DONE    | Added redirection        | Redirection en changent l'url    |
-|---------+--------------------------+----------------------------------|
-| NO_NEED | Added rewrite url        | Redirection sans changer l'url   |
-|---------+--------------------------+----------------------------------|
-|         | /fr → /                  |                                  |
-|---------+--------------------------+----------------------------------|
-|         | /fr/whatever → /whatever |                                  |
+| STATE   | ACTIONS                                                      | INFOS                                                                                      |
+|---------+--------------------------------------------------------------+--------------------------------------------------------------------------------------------|
+| DONE    | SET NEXT_LOCALE=fr                                           | override user local default lang                                                           |
+|---------+--------------------------------------------------------------+--------------------------------------------------------------------------------------------|
+| DONE    | Added redirection                                            | Redirection en changent l'url                                                              |
+|---------+--------------------------------------------------------------+--------------------------------------------------------------------------------------------|
+| NO_NEED | Added rewrite url                                            | Redirection sans changer l'url                                                             |
+|---------+--------------------------------------------------------------+--------------------------------------------------------------------------------------------|
+|         | /fr → /                                                      |                                                                                            |
+|---------+--------------------------------------------------------------+--------------------------------------------------------------------------------------------|
+|         | /fr/whatever → /whatever                                     |                                                                                            |
+|---------+--------------------------------------------------------------+--------------------------------------------------------------------------------------------|
+|         | Ameliorer la performace du site                              |                                                                                            |
+|         | + Image Optimisation with Nextjs Image Component             | https://nextjs.org/docs/basic-features/image-optimization                                  |
+|         | + Font Optimization                                          | https://nextjs.org/docs/basic-features/font-optimization                                   |
+| (hurst) | + This reduces the base JavaScript weight of pages to ~22kB. | https://github.com/developit/nextjs-preact-demo (No clear)                                 |
+| (hurst) | + Generating static pages dynamically (Seem good) , that use | https://tinloof.com/blog/using-next.js-and-vercel-to-instantly-load-a-data-heavy-website   |
+|         | SWR from same team behind Nextjs.                            | and  https://swr.vercel.app/ (THis solution can to override getInitialProps in _app.jsx)   |
+|         |                                                              | and we can use getStaticProps in _app.tsx for some obscure raison, solution is to wrap all |
+|         |                                                              | page with getStaticProps component, which is too many works.                               |
+|         | + Cache-Control fro getServerSideProps in next.config.tsx    |                                                                                            |
+
+
+    ]) => {
+      return {
+        props: {     
+            // ...appProps,
+            i18nMessages,
+            partnersResponse: partnersResponse[0],
+            edfMedalCount,
+            menuDisciplinesResponse,
+            menuLinksResponse: menuLinksResponse[0],
+            socialNetworkBlockResponse: socialNetworkBlockResponse[0],
+            footerLinks,
+            blocEdfBackground,
+          },
+        revalidate: 60 * 60,
+      };
+    },
