@@ -1,0 +1,101 @@
+notes_track_trace
+
+
+Objectif: L'app est pour l'Usine de conserve de poisson.
+
+Usine de conserve de poison
+   • Fournir
+      ◦ donnees
+   • Stock
+      ◦ donnees
+      ◦ Soit emballer
+         ◦ Non emballer venir a l'amballage
+         ▸ Soit par camoin/conteneur
+   • Client, commande des clients(Grossite)
+      ◦ donnees
+   • Boite
+      ◦ donnees
+   • Boite de Date
+   • Production
+      - Planinfication
+      - Etapes de prodction
+      - Emballage de pd finis
+      - Mise en pallete.
+
+
+Groussite → vers clients.
+
+#SCHEMA DE TRACABILITÉ:
+   1 Fournisseurs des matieres:
+      • Poison
+      • Boite vide
+      • Ingrediens
+   2 Receptions (Stock des matieres premiers)
+      • Poison 
+      • Boite vide
+      • Ingrediens
+   3 Production
+      • Planification
+      • Production
+      • Emballage
+      • Paletissation
+   4 Stockage
+      • Produit Fini
+      • Produit Non Emballé
+   5 Commande
+      • Commandes de clients(grossiste)
+   6 Chargement
+      • Liste des chargements
+   7 Rapport
+
+| FEATURES                                              | CREATE/Validation           | READ-List                     | UPDATE-MOdification/Validation | USER/Company | INFOS                          |
+|-------------------------------------------------------+-----------------------------+-------------------------------+--------------------------------+--------------+--------------------------------|
+| FOURNISSEURS                                          |                             |                               |                                |              | Il y'a pas de validation       |
+| + Poison/Fish                                         | DONE / TODO                 | DONE                          | DONE / TODO                    | DONE         | pour la creations et modi-     |
+| + Boite vide/Can                                      | DONE / TODO                 | DONE                          | DONE / TODO                    | DONE         | fication                       |
+| + Ingredient/Ingredient                               | DONE / TODO                 | DONE                          | DONE / TODO                    | DONE         | Date: add date pickle          |
+|-------------------------------------------------------+-----------------------------+-------------------------------+--------------------------------+--------------+--------------------------------|
+| Client                                                |                             |                               |                                |              | Date: add date pickle          |
+| + Client                                              | DONE                        | DONE                          | DONE                           | DONE         | Pas de possibilité de ge       |
+| + Agent                                               | DONE                        | DONE                          | DONE                           | DONE         | nerer du input pour ajouter    |
+| + Marques Client                                      | DONE                        | DONE                          | DONE                           | DONE         | d'autre types                  |
+|-------------------------------------------------------+-----------------------------+-------------------------------+--------------------------------+--------------+--------------------------------|
+| RECEPTIONS                                            |                             |                               |                                |              | Date: add date pickle          |
+| + Poison                                              | DONE                        | DONE                          | DONE                           | DONE         | Pas de possibilité de ge       |
+| + Boite vide                                          | DONE                        | DONE                          | DONE                           | DONE         | nerer du input pour ajouter    |
+| + Ingrediens                                          | DONE                        | DONE                          | DONE                           | DONE         | d'autre types                  |
+|-------------------------------------------------------+-----------------------------+-------------------------------+--------------------------------+--------------+--------------------------------|
+| PRODUCTION                                            |                             |                               |                                |              | Date: add date pickle          |
+| + Planification                                       | TODO (Liste des marques)    | TODO: (Liste des marques)     | TODO                           | TODO         | 'Liste des Marques': ne marche |
+| + Production                                          | DONE (TODO: Date Pickle)    | DONE (TODO:placeholder search | DONE (TODO: Date Pickle)       | DONE         | pas                            |
+| + Emballage                                           | DONE (TODO: Date Pickle)    | DONE (TODO:placeholder search | DONE (TODO: Date Pickle)       | DONE         |                                |
+| + Paletissation                                       | DONE (TODO: Date Pickle)    | DONE (TODO:placeholder search | DONE (TODO: Date Pickle)       | DONE         |                                |
+|-------------------------------------------------------+-----------------------------+-------------------------------+--------------------------------+--------------+--------------------------------|
+| STOCKAGE                                              |                             |                               |                                |              | Date: add date pickle, definir |
+| + Produit Fini                                        | ENTREE:DONE / SORTIE:TODO   | ENTREE:DONE / SORTIE:TODO     | ENTREE:DONE / SORTIE:TODO      | DONE         | la date automatiquement.       |
+| + Produit non emballé                                 | ENTREE:DONE / SORTIE:DONE   | ENTREE:DONE / SORTIE:DONE     | ENTREE:DONE / SORTIE:DONE      | DONE         |                                |
+|-------------------------------------------------------+-----------------------------+-------------------------------+--------------------------------+--------------+--------------------------------|
+| COMMANDE                                              |                             |                               |                                |              |                                |
+| + Commande/Order                                      | DONE                        | DONE                          | DONE                           | DONE         |                                |
+| + Ligne de Commande/Orderline                         | TODO                        | TODO                          | TODO                           | TODO         |                                |
+|-------------------------------------------------------+-----------------------------+-------------------------------+--------------------------------+--------------+--------------------------------|
+| Chargement                                            |                             |                               |                                |              | ManyToMany ProduitDetail ?     |
+| + Truck ()                                            | TODO                        | TODO                          | TODO                           | TODO         | pourquoi le model Truckproduct |
+| + Container ()                                        | TODO                        | TODO                          | TODO                           | TODO         | et Containerproduct            |
+|-------------------------------------------------------+-----------------------------+-------------------------------+--------------------------------+--------------+--------------------------------|
+| Expeditions                                           |                             |                               |                                |              | ManyToMany ProduitDetail ?     |
+| + TruckList ?                                         | TODO                        | TODO                          | TODO                           | TODO         |                                |
+| + ContainerList ?                                     | TODO                        | TODO                          | TODO                           | TODO         |                                |
+|-------------------------------------------------------+-----------------------------+-------------------------------+--------------------------------+--------------+--------------------------------|
+| http://localhost:8000/../fish/edit/outOfIndex         |                             |                               |                                |              | definir uid au lieu de id as   |
+| FOURNISSEURS                                          |                             |                               |                                |              | primary key et corriger le bug |
+| Chargement                                            |                             |                               |                                |              | lorsque uid n'existe pas.      |
+|                                                       |                             |                               |                                |              |                                |
+|                                                       |                             |                               |                                |              |                                |
+|                                                       |                             |                               |                                |              |                                |
+|-------------------------------------------------------+-----------------------------+-------------------------------+--------------------------------+--------------+--------------------------------|
+| Validation d'edit d'une commande ne renvoi pas        | vers la liste des commandes |                               |                                |              |                                |
+|-------------------------------------------------------+-----------------------------+-------------------------------+--------------------------------+--------------+--------------------------------|
+| De meme pour la reception des boites vides            |                             |                               |                                |              |                                |
+|-------------------------------------------------------+-----------------------------+-------------------------------+--------------------------------+--------------+--------------------------------|
+| Pas de redirection apres la connexion vers un feature |                             |                               |                                |              |                                |
